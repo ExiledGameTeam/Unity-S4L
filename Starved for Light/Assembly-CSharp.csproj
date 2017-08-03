@@ -140,6 +140,7 @@
      <Compile Include="Assets\Assets_Game\Scripts\FpsToggle.cs" />
      <Compile Include="Assets\Assets_Game\Scripts\Kursor.cs" />
      <Compile Include="Assets\Assets_Game\Scripts\LunaControl.cs" />
+     <Compile Include="Assets\Assets_Game\Scripts\LunaControl_v2.cs" />
      <Compile Include="Assets\Assets_Game\Scripts\Moon.cs" />
      <Compile Include="Assets\Assets_Game\Scripts\Rotate.cs" />
      <Compile Include="Assets\Assets_Game\Scripts\SVGBlurModifier.cs" />
