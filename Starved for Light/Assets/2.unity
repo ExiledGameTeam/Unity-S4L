@@ -17529,10 +17529,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   t: 0.2
   t2: 0
-  speed: 0
+  speed: 4
   sneakSpeed: 1.5
   galopspeed: 3
-  maxSpeed: 3
+  maxSpeed: 1.5
 --- !u!1 &700935150
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ public class LunaControl : MonoBehaviour
     public float sneakSpeed = 0.8f;
     public float galopspeed = 3f;
     public float maxSpeed = 1.5f;
-    
+
 
     bool facingRight = true;
     private bool troting = false;
@@ -23,8 +23,8 @@ public class LunaControl : MonoBehaviour
     Animator anim;
 
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
         anim = GetComponent<Animator>();
         anim.SetBool("FacingRight", true);
@@ -34,15 +34,15 @@ public class LunaControl : MonoBehaviour
 
         RB2D = gameObject.GetComponent<Rigidbody2D>();
     }
-	
-	// Update is called once per frame
-	void FixedUpdate ()
+
+    // Update is called once per frame
+    void FixedUpdate()
     {
-        
-// Trot animation
+
+        // Trot animation
         float move = InputManager.GetAxis("Horizontal");
         anim.SetFloat("MoveInput", Mathf.Abs(move));
-//Sneak check {
+        //Sneak check {
         if (InputManager.GetButton("Sneak"))
         {
             sneaking = true;
@@ -54,40 +54,40 @@ public class LunaControl : MonoBehaviour
             anim.SetBool("Sneaking", false);
         }
         //}
-      
-        
-            if (facingRight)
-            {
-                speed = (Mathf.Lerp(0f, 1f, t2));
-            }
-            else if (!facingRight)
-            {
-                speed = (Mathf.Lerp(0f, -1f, t2));
-            }
 
 
-            t2 += (Time.deltaTime * 2);
+        if (facingRight)
+        {
+            speed = (Mathf.Lerp(0f, 1f, t2));
+        }
+        else if (!facingRight)
+        {
+            speed = (Mathf.Lerp(0f, -1f, t2));
+        }
 
 
-            if (!facingRight && move < 0.15 && move >= 0)
-            {
-                t2 = 0;
-            }
+        t2 += (Time.deltaTime * 2);
 
-            else if (facingRight && move > -0.15 & move <= 0)
-            {
-                t2 = 0;
-            }
 
-            if (speed > move && facingRight)
-            {
-                speed = move;
+        if (!facingRight && move < 0.15 && move >= 0)
+        {
+            t2 = 0;
+        }
 
-            }
-            else if (speed < move && !facingRight)
-            {
-                speed = move;
-            }
+        else if (facingRight && move > -0.15 & move <= 0)
+        {
+            t2 = 0;
+        }
+
+        if (speed > move && facingRight)
+        {
+            speed = move;
+
+        }
+        else if (speed < move && !facingRight)
+        {
+            speed = move;
+        }
         if (!sneaking)
         {
             RB2D.velocity = new Vector2(speed * maxSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
@@ -109,7 +109,7 @@ public class LunaControl : MonoBehaviour
         }
         if (InputManager.GetAxisRaw("Horizontal") != 0)
         {
-            if(troting == false)
+            if (troting == false)
             {
                 anim.SetBool("Troting", true);
                 troting = true;

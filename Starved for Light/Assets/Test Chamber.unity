@@ -3603,8 +3603,8 @@ MonoBehaviour:
   t2: 0
   speed: 0
   sneakSpeed: 0.8
-  galopspeed: 3
-  maxSpeed: 1.5
+  galopSpeed: 4
+  trotSpeed: 4
 --- !u!114 &1671504198
 MonoBehaviour:
   m_ObjectHideFlags: 0
