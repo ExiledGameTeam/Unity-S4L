@@ -13,10 +13,14 @@ public class LunaControl_v2 : MonoBehaviour
     public float trotSpeed = 1.5f;
     public float galopSpeed = 1.5f;
 
+    public float groundRadius = 4f;
+    public Vector2 middleGrounded;
+    public LayerMask groundLayer;
 
     bool facingRight = true;
     private bool troting = false;
     private bool sneaking = false;
+    public bool grounded;
 
     private Rigidbody2D RB2D;
 
@@ -66,7 +70,7 @@ public class LunaControl_v2 : MonoBehaviour
         }
 
 
-        t2 += (Time.deltaTime * 4);
+        t2 += (Time.deltaTime * 3);
 
 
         if (!facingRight && move < 0.15 && move >= 0)
@@ -81,12 +85,14 @@ public class LunaControl_v2 : MonoBehaviour
 
         if (speed > move && facingRight)
         {
-            speed = move;
+            speed = (Mathf.Lerp(speed, move, 0.1f));
+            t2 = speed;
 
         }
         else if (speed < move && !facingRight)
         {
-            speed = move;
+            speed = (Mathf.Lerp(speed, move, 0.1f));
+            t2 = Mathf.Abs(speed);
         }
         if (!sneaking)
         {
@@ -148,16 +154,10 @@ public class LunaControl_v2 : MonoBehaviour
         {
             t = 0;
         }
-        //slowing down
-        {
-            if (!troting && !galop)
-            {
+        //jump
+        grounded = Physics2D.OverlapCircle(middleGrounded, groundRadius, groundLayer);
 
-            }
-        }
-
-
-
+        
     }
     void update()
     {
@@ -170,4 +170,5 @@ public class LunaControl_v2 : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
+
 }

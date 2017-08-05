@@ -201,9 +201,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.007263
+  field of view: 60.003464
   orthographic: 0
-  orthographic size: 2.3241973
+  orthographic size: 2.3240194
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -320,7 +320,7 @@ MonoBehaviour:
   _ambientLight: {r: 0.041023653, g: 0.027116906, b: 0.049, a: 0.85}
   _exposure: 3.51
   _lightMapScale: 8
-  _shadowMapScale: 2
+  _shadowMapScale: 1
   _minLightPenetration: 1.23
   _fogColor: {r: 0.2188881, g: 0.08885519, b: 0.10429664, a: 0}
   _scatterColor: {r: 0.181, g: 0.181, b: 0.181, a: 0.17}
@@ -4348,9 +4348,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.007263
+  field of view: 60.003464
   orthographic: 0
-  orthographic size: 2.3241973
+  orthographic size: 2.3240194
   m_Depth: 0.11
   m_CullingMask:
     serializedVersion: 2
@@ -17060,9 +17060,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.007263
+  field of view: 60.003464
   orthographic: 0
-  orthographic size: 22.92359
+  orthographic size: 22.921835
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
@@ -17532,7 +17532,7 @@ MonoBehaviour:
   speed: 4
   sneakSpeed: 1.5
   galopspeed: 3
-  maxSpeed: 1.5
+  maxSpeed: 3
 --- !u!1 &700935150
 GameObject:
   m_ObjectHideFlags: 0
@@ -30484,9 +30484,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.007263
+  field of view: 60.003464
   orthographic: 0
-  orthographic size: 2.3241973
+  orthographic size: 2.3240194
   m_Depth: 0.09
   m_CullingMask:
     serializedVersion: 2
