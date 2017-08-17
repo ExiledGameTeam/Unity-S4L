@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class GroundCheck : MonoBehaviour {
 
+
+
+    private void OnTriggerStay()
+    {
+
+    }
 	// Use this for initialization
 	void Start () {
 		
