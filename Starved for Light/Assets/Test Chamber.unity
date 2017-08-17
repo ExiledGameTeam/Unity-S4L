@@ -641,9 +641,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.007263
+  field of view: 60.003464
   orthographic: 0
-  orthographic size: 2.3241973
+  orthographic size: 2.3240194
   m_Depth: 0.11
   m_CullingMask:
     serializedVersion: 2
@@ -1119,9 +1119,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.007263
+  field of view: 60.003464
   orthographic: 0
-  orthographic size: 22.92359
+  orthographic size: 22.921835
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
@@ -1537,9 +1537,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.007263
+  field of view: 60.003464
   orthographic: 0
-  orthographic size: 2.3241973
+  orthographic size: 2.3240194
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -1624,34 +1624,6 @@ Transform:
   m_Father: {fileID: 1040496076}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.80701}
---- !u!1 &837534334
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 837534335}
-  m_Layer: 17
-  m_Name: Grounded_point
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &837534335
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 837534334}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.023, y: -0.213, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1671504204}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &853543624
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,7 +2192,7 @@ MonoBehaviour:
       joystick: 0
     - name: Sprint
       description: Button A
-      positive: 350
+      positive: 352
       negative: 0
       altPositive: 0
       altNegative: 0
@@ -3100,9 +3072,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.007263
+  field of view: 60.003464
   orthographic: 0
-  orthographic size: 2.3241973
+  orthographic size: 2.3240194
   m_Depth: 0.09
   m_CullingMask:
     serializedVersion: 2
@@ -3118,6 +3090,34 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
+--- !u!1 &1216870209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1216870210}
+  m_Layer: 17
+  m_Name: groundcheck
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1216870210
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1216870209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.014, y: -0.373, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1671504204}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1280499570
 GameObject:
   m_ObjectHideFlags: 0
@@ -3633,12 +3633,13 @@ MonoBehaviour:
   sneakSpeed: 0.8
   trotSpeed: 4
   galopSpeed: 2
-  groundRadius: 4
-  middleGrounded: {x: 0.023, y: -0.213}
+  grounded: 0
+  groundCheckRadius: 0.1
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  grounded: 0
+  groundcheck: {fileID: 1216870210}
+  jumpForce: 400
 --- !u!114 &1671504198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3990,7 +3991,7 @@ Transform:
   - {fileID: 1280499571}
   - {fileID: 1583750318}
   - {fileID: 974460526}
-  - {fileID: 837534335}
+  - {fileID: 1216870210}
   m_Father: {fileID: 1737354754}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4169,7 +4170,7 @@ GameObject:
   - component: {fileID: 1789570872}
   m_Layer: 8
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

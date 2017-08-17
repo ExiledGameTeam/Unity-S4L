@@ -13,16 +13,18 @@ public class LunaControl_v2 : MonoBehaviour
     public float trotSpeed = 1.5f;
     public float galopSpeed = 1.5f;
 
-    public float groundRadius = 4f;
-    public Vector2 middleGrounded;
-    public LayerMask groundLayer;
-
     bool facingRight = true;
     private bool troting = false;
     private bool sneaking = false;
     public bool grounded;
 
     private Rigidbody2D RB2D;
+    private BoxCollider2D GroundTrigger;
+    public float groundCheckRadius = 0.1f;
+    public LayerMask groundLayer;
+    public Transform groundcheck;
+
+    public float jumpForce = 400f;
 
     Animator anim;
 
@@ -155,10 +157,16 @@ public class LunaControl_v2 : MonoBehaviour
             t = 0;
         }
         //jump
-        grounded = Physics2D.OverlapCircle(middleGrounded, groundRadius, groundLayer);
+        grounded = Physics2D.OverlapCircle(groundcheck.position, groundCheckRadius, groundLayer);
 
-        
+        if (grounded && InputManager.GetButton("Jump"))
+        {
+            RB2D.AddForce(new Vector2(0, jumpForce));
+        }
     }
+
+
+
     void update()
     {
     }

@@ -154,6 +154,7 @@
      <Compile Include="Assets\FXAA\Scripts\FXAAPostEffectsBase.cs" />
      <Compile Include="Assets\FXAA3\FXAA3ImageEffect.cs" />
      <Compile Include="Assets\FXAA3\Scripts\FXAA3.cs" />
+     <Compile Include="Assets\GroundCheck.cs" />
      <Compile Include="Assets\InputManager\Addons\InputAdapter\Runtime\InputAdapter.cs" />
      <Compile Include="Assets\InputManager\Addons\InputEvents\Runtime\InputEvent.cs" />
      <Compile Include="Assets\InputManager\Addons\InputEvents\Runtime\InputEventManager.cs" />
