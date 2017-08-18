@@ -17,6 +17,8 @@ public class LunaControl_v2 : MonoBehaviour
     private bool troting = false;
     private bool sneaking = false;
     public bool grounded;
+    public bool readyToJump = false;
+    public float jumpDelay = 1f;
 
     private Rigidbody2D RB2D;
     private BoxCollider2D GroundTrigger;
@@ -159,13 +161,34 @@ public class LunaControl_v2 : MonoBehaviour
         //jump
         grounded = Physics2D.OverlapCircle(groundcheck.position, groundCheckRadius, groundLayer);
 
-        if (grounded && InputManager.GetButton("Jump"))
+        if (!grounded)
+        {
+            readyToJump = false;
+        }
+        if (grounded)
+        {
+            StartCoroutine("ExecuteAfterTime");
+        }
+        else
+        {
+            StopCoroutine("ExecuteAfterTime");
+        }
+
+        if (readyToJump && grounded && InputManager.GetButtonDown("Jump"))
         {
             RB2D.AddForce(new Vector2(0, jumpForce));
         }
     }
 
+//groundReady
 
+    IEnumerator ExecuteAfterTime()
+    {
+        yield return new WaitForSeconds(jumpDelay);
+        readyToJump = true;
+
+
+    }
 
     void update()
     {
