@@ -7,18 +7,28 @@ public class LunaControl_v2 : MonoBehaviour
 {
     public float t = 0f;
     public float t2 = 0f;
+    public float tJumpSpeed = 0f;
     public float speed = 0f;
 
     public float sneakSpeed = 0.8f;
     public float trotSpeed = 1.5f;
     public float galopSpeed = 1.5f;
+    public float jumpforceReference;
 
     bool facingRight = true;
     private bool troting = false;
     private bool sneaking = false;
+    private bool jumping = false;
     public bool grounded;
     public bool readyToJump = false;
+    public bool CanHoldJump = true;
     public float jumpDelay = 1f;
+
+    public float _timeHeld = 0.0f;
+    public float _timeForFullJump = 2.0f;
+    public float _minJumpForce = 0.5f;
+    public float _maxJumpForce = 2.0f;
+    public float _leftJumpForce = 1.0f;
 
     private Rigidbody2D RB2D;
     private BoxCollider2D GroundTrigger;
@@ -174,10 +184,37 @@ public class LunaControl_v2 : MonoBehaviour
             StopCoroutine("ExecuteAfterTime");
         }
 
-        if (readyToJump && grounded && InputManager.GetButtonDown("Jump"))
+        if (InputManager.GetButtonUp("Jump"))
         {
-            RB2D.AddForce(new Vector2(0, jumpForce));
+            tJumpSpeed = 0f;
         }
+        if (readyToJump)
+        {
+            CanHoldJump = true;
+        }
+        if (grounded)
+        {
+
+        }
+
+        if (InputManager.GetButton("Jump") && CanHoldJump)
+        {
+            Jump();
+            tJumpSpeed += (Time.deltaTime * 20);
+        }
+        if (InputManager.GetButton("Jump"))
+        {
+            jumping = true;
+        }
+        if (!InputManager.GetButton("Jump"))
+        {
+            jumping = false;
+        }
+        if (grounded || !jumping)
+        {
+            tJumpSpeed = 0f;
+        }
+        jumpforceReference = jumpForce * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed));
     }
 
 //groundReady
@@ -188,6 +225,11 @@ public class LunaControl_v2 : MonoBehaviour
         readyToJump = true;
 
 
+
+        }
+    public void Jump()
+    {
+         RB2D.AddForce(new Vector2(0, jumpForce * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed))));
     }
 
     void update()

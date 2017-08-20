@@ -3698,19 +3698,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   t: 0
   t2: 0
+  tJumpSpeed: 0
   speed: 0
   sneakSpeed: 0.8
   trotSpeed: 4
   galopSpeed: 2
+  jumpforceReference: 0
   grounded: 0
   readyToJump: 0
-  jumpDelay: 0.01
+  CanHoldJump: 1
+  jumpDelay: 0.1
+  _timeHeld: 0
+  _timeForFullJump: 2
+  _minJumpForce: 0.5
+  _maxJumpForce: 1
+  _leftJumpForce: 1
   groundCheckRadius: 0.1
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
   groundcheck: {fileID: 1216870210}
-  jumpForce: 320
+  jumpForce: 80
 --- !u!114 &1671504198
 MonoBehaviour:
   m_ObjectHideFlags: 0
