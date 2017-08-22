@@ -641,9 +641,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.003464
+  field of view: 60.000004
   orthographic: 0
-  orthographic size: 2.3240194
+  orthographic size: 2.323857
   m_Depth: 0.11
   m_CullingMask:
     serializedVersion: 2
@@ -1188,9 +1188,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.003464
+  field of view: 60.000004
   orthographic: 0
-  orthographic size: 22.921835
+  orthographic size: 22.920233
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
@@ -1606,9 +1606,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.003464
+  field of view: 60.000004
   orthographic: 0
-  orthographic size: 2.3240194
+  orthographic size: 2.323857
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2074,6 +2074,132 @@ MonoBehaviour:
       type: 0
       axis: 0
       joystick: 0
+    - name: Hover
+      description: 
+      positive: 308
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 1
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Sneak
+      description: 
+      positive: 306
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 1
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Sneak
+      description: 
+      positive: 306
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 1
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Sneak
+      description: 
+      positive: 306
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 1
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Sneak
+      description: 
+      positive: 306
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 1
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Sneak
+      description: 
+      positive: 306
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 1
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Sneak
+      description: 
+      positive: 306
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 1
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Sneak
+      description: 
+      positive: 306
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 1
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Sneak
+      description: 
+      positive: 306
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
+      snap: 1
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
     isExpanded: 1
   - name: Windows_Gamepad
     axes:
@@ -2276,6 +2402,62 @@ MonoBehaviour:
     - name: Sneak
       description: Button B
       positive: 351
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0.2
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Hover
+      description: 
+      positive: 350
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0
+      gravity: 0
+      sensitivity: 1000
+      snap: 1
+      invert: 0
+      type: 3
+      axis: 9
+      joystick: 0
+    - name: Sprint
+      description: Button A
+      positive: 350
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0.2
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Sprint
+      description: Button A
+      positive: 350
+      negative: 0
+      altPositive: 0
+      altNegative: 0
+      deadZone: 0.2
+      gravity: 1
+      sensitivity: 1
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Sprint
+      description: Button A
+      positive: 350
       negative: 0
       altPositive: 0
       altNegative: 0
@@ -3141,9 +3323,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.003464
+  field of view: 60.000004
   orthographic: 0
-  orthographic size: 2.3240194
+  orthographic size: 2.323857
   m_Depth: 0.09
   m_CullingMask:
     serializedVersion: 2
@@ -3181,7 +3363,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1216870209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.014, y: -0.3641, z: 0}
+  m_LocalPosition: {x: 0.014, y: -0.3792, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1671504204}
@@ -3699,18 +3881,21 @@ MonoBehaviour:
   t: 0
   t2: 0
   tJumpSpeed: 0
+  tDoubleJumpSpeed: 0
   speed: 0
   sneakSpeed: 0.8
   trotSpeed: 4
   galopSpeed: 2
   jumpforceReference: 0
-  grounded: 0
+  grounded: 1
   readyToJump: 0
   CanHoldJump: 1
-  jumpDelay: 0.1
+  jumpDelay: 0.01
+  canDoubleJump: 0
+  DoubleJumped: 0
   _timeHeld: 0
-  _timeForFullJump: 2
-  _minJumpForce: 0.5
+  timeForFullJump: 2
+  timeForFullDoubleJump: 4
   _maxJumpForce: 1
   _leftJumpForce: 1
   groundCheckRadius: 0.1
@@ -3718,7 +3903,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   groundcheck: {fileID: 1216870210}
-  jumpForce: 80
+  jumpForce: 10
+  jumpForceBase: 220
+  DoubleJumpForce: 15
+  DoubleJumpForceBase: 220
 --- !u!114 &1671504198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4247,6 +4435,7 @@ GameObject:
   - component: {fileID: 1789570874}
   - component: {fileID: 1789570873}
   - component: {fileID: 1789570872}
+  - component: {fileID: 1789570877}
   m_Layer: 8
   m_Name: Square
   m_TagString: Ground
@@ -4353,6 +4542,26 @@ Transform:
   m_Father: {fileID: 1606736798}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1789570877
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1789570871}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1819104645
 GameObject:
   m_ObjectHideFlags: 0

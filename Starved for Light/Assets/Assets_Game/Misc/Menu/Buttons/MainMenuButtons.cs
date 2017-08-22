@@ -29,6 +29,8 @@ public class MainMenuButtons : MonoBehaviour {
     public GameObject Soptions;
     public GameObject Main;
 
+    public Button ToTest;
+
 
     // Use this for initialization
     void Start()
@@ -92,20 +94,24 @@ public class MainMenuButtons : MonoBehaviour {
         Debug.Log("You have clicked the button!");
         StoreSelected = Soptions;
         ES.SetSelectedGameObject(Soptions);
-
     }
     public void ExtrasClick()
     {
-
+        Debug.Log("Depr");
     }
     public void ContinueClick()
     {
-
+        Debug.Log("Depr");
     }
     public void NewGameClick()
     {
         White.SetBool("WhiteOff", false);
         StartCoroutine(ExecuteAfterTime());
+    }
+    public void ToTestClick()
+    {
+        Debug.Log("Depr");
+        Application.LoadLevel("Test Chamber");
     }
     IEnumerator ExecuteAfterTime()
     {
