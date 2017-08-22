@@ -257,12 +257,15 @@ public class LunaControl_v2 : MonoBehaviour
             tJumpSpeed = 0f;
         }
         jumpforceReference = jumpForce * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed));
-//Hover
-        if (!grounded && InputManager.GetAxisRaw("Hover") == 1)
+        //Hover
+        if (!grounded)
         {
-            Debug.Log("Derp");
-            RB2D.velocity = new Vector2(RB2D.velocity.x, (Mathf.Lerp(RB2D.velocity.y, HoverForce, tHoverSpeed)));
-            tHoverSpeed += (Time.deltaTime);
+            if(InputManager.GetAxisRaw("Hover") == 1 || InputManager.GetButton("Hover"))
+            {
+                Debug.Log("Derp");
+                RB2D.velocity = new Vector2(RB2D.velocity.x, (Mathf.Lerp(RB2D.velocity.y, HoverForce, tHoverSpeed)));
+                tHoverSpeed += (Time.deltaTime);
+            }
         }
         else
         {
