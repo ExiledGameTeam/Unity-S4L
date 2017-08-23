@@ -42,7 +42,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 11
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 8
+    serializedVersion: 9
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
@@ -71,7 +71,7 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-    m_MixedBakeMode: 3
+    m_MixedBakeMode: 2
     m_BakeBackend: 0
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
@@ -87,7 +87,7 @@ LightmapSettings:
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
   m_LightingDataAsset: {fileID: 0}
-  m_ShadowMaskMode: 2
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -164,6 +164,8 @@ SpriteRenderer:
   m_Size: {x: 11.08, y: 4.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &38516595
 Transform:
   m_ObjectHideFlags: 0
@@ -572,7 +574,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 75.17818
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 2.323857
   m_Depth: 0.11
@@ -744,6 +746,8 @@ SpriteRenderer:
   m_Size: {x: 11.08, y: 4.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &259974524
 Transform:
   m_ObjectHideFlags: 0
@@ -1009,6 +1013,8 @@ SpriteRenderer:
   m_Size: {x: 15.35, y: 10.63}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &317830764
 Transform:
   m_ObjectHideFlags: 0
@@ -1067,7 +1073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dampTime: 0.5
-  target: {fileID: 0}
+  target: {fileID: 1063088271}
 --- !u!114 &420915245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1119,7 +1125,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 75.17818
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 22.920233
   m_Depth: 1
@@ -1193,6 +1199,8 @@ SpriteRenderer:
   m_Size: {x: 11.08, y: 4.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &449476027
 Transform:
   m_ObjectHideFlags: 0
@@ -1381,7 +1389,6 @@ GameObject:
   - component: {fileID: 561084919}
   - component: {fileID: 561084918}
   - component: {fileID: 561084917}
-  - component: {fileID: 561084916}
   - component: {fileID: 561084915}
   m_Layer: 0
   m_Name: Main Camera
@@ -1427,17 +1434,6 @@ MonoBehaviour:
   _fogColor: {r: 0.2188881, g: 0.08885519, b: 0.10429664, a: 0}
   _scatterColor: {r: 0.181, g: 0.181, b: 0.181, a: 0.17}
   _softHardMix: 0.661
---- !u!114 &561084916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 561084913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d9b6871d3cdbba478825c4b041a7f90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &561084917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1535,7 +1531,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 75.17818
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 2.323857
   m_Depth: 0
@@ -1609,6 +1605,8 @@ SpriteRenderer:
   m_Size: {x: 11.08, y: 4.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &835508080
 Transform:
   m_ObjectHideFlags: 0
@@ -1833,7 +1831,7 @@ MonoBehaviour:
       type: 0
       axis: 0
       joystick: 0
-    - name: Sneak
+    - name: 1
       description: 
       positive: 306
       negative: 0
@@ -1847,7 +1845,7 @@ MonoBehaviour:
       type: 0
       axis: 0
       joystick: 0
-    - name: Sneak
+    - name: 2
       description: 
       positive: 306
       negative: 0
@@ -1861,7 +1859,7 @@ MonoBehaviour:
       type: 0
       axis: 0
       joystick: 0
-    - name: Sneak
+    - name: 3
       description: 
       positive: 306
       negative: 0
@@ -1875,7 +1873,7 @@ MonoBehaviour:
       type: 0
       axis: 0
       joystick: 0
-    - name: Sneak
+    - name: 4
       description: 
       positive: 306
       negative: 0
@@ -1889,7 +1887,7 @@ MonoBehaviour:
       type: 0
       axis: 0
       joystick: 0
-    - name: Sneak
+    - name: 5
       description: 
       positive: 306
       negative: 0
@@ -1903,7 +1901,7 @@ MonoBehaviour:
       type: 0
       axis: 0
       joystick: 0
-    - name: Sneak
+    - name: 6
       description: 
       positive: 306
       negative: 0
@@ -1917,7 +1915,7 @@ MonoBehaviour:
       type: 0
       axis: 0
       joystick: 0
-    - name: Sneak
+    - name: 7
       description: 
       positive: 306
       negative: 0
@@ -1931,7 +1929,7 @@ MonoBehaviour:
       type: 0
       axis: 0
       joystick: 0
-    - name: Sneak
+    - name: 8
       description: 
       positive: 306
       negative: 0
@@ -2172,7 +2170,7 @@ MonoBehaviour:
       type: 3
       axis: 9
       joystick: 0
-    - name: Sprint
+    - name: 1
       description: Button A
       positive: 350
       negative: 0
@@ -2186,7 +2184,7 @@ MonoBehaviour:
       type: 0
       axis: 0
       joystick: 0
-    - name: Sprint
+    - name: 2
       description: Button A
       positive: 350
       negative: 0
@@ -2200,7 +2198,7 @@ MonoBehaviour:
       type: 0
       axis: 0
       joystick: 0
-    - name: Sprint
+    - name: 3
       description: Button A
       positive: 350
       negative: 0
@@ -2214,7 +2212,7 @@ MonoBehaviour:
       type: 0
       axis: 0
       joystick: 0
-    - name: Sprint
+    - name: 4
       description: Button A
       positive: 350
       negative: 0
@@ -2661,6 +2659,8 @@ SpriteRenderer:
   m_Size: {x: 11.08, y: 4.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &930958434
 Transform:
   m_ObjectHideFlags: 0
@@ -3003,7 +3003,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 75.17818
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 2.323857
   m_Depth: 0.09
@@ -3077,6 +3077,8 @@ SpriteRenderer:
   m_Size: {x: 11.08, y: 4.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &1490957406
 Transform:
   m_ObjectHideFlags: 0
@@ -3146,6 +3148,8 @@ SpriteRenderer:
   m_Size: {x: 11.08, y: 4.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &1522241734
 Transform:
   m_ObjectHideFlags: 0
@@ -3292,6 +3296,8 @@ SpriteRenderer:
   m_Size: {x: 5.48, y: 1.01}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &1652681033
 GameObject:
   m_ObjectHideFlags: 0
@@ -3348,6 +3354,8 @@ SpriteRenderer:
   m_Size: {x: 11.08, y: 4.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &1652681035
 Transform:
   m_ObjectHideFlags: 0
@@ -3492,6 +3500,8 @@ SpriteRenderer:
   m_Size: {x: 7.13, y: 7.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &1789570871
 GameObject:
   m_ObjectHideFlags: 0
@@ -3883,6 +3893,8 @@ SpriteRenderer:
   m_Size: {x: 11.08, y: 4.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &2016698211
 Transform:
   m_ObjectHideFlags: 0
@@ -3952,6 +3964,8 @@ SpriteRenderer:
   m_Size: {x: 11.08, y: 4.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &2016698341
 Transform:
   m_ObjectHideFlags: 0
