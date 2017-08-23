@@ -572,7 +572,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 75.17818
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 2.323857
   m_Depth: 0.11
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dampTime: 0.5
-  target: {fileID: 0}
+  target: {fileID: 1063088271}
 --- !u!114 &420915245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1119,7 +1119,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 75.17818
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 22.920233
   m_Depth: 1
@@ -1535,7 +1535,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 75.17818
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 2.323857
   m_Depth: 0
@@ -3003,7 +3003,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 75.17818
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 2.323857
   m_Depth: 0.09
