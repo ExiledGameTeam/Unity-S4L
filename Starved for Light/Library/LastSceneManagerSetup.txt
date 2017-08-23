@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Test Chamber.unity
+- path: Assets/Alpha.unity
   isLoaded: 1
   isActive: 1
