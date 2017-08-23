@@ -1,7 +1,7 @@
 # =============== #
 # Unity generated #
 # =============== #
-[Tt]emp/
+*/[Tt]emp/*
 */[Oo]bj/*
 */Build/*
 */Library/*
@@ -12,16 +12,18 @@ sysinfo.txt
 # Visual Studio / MonoDevelop / Rider generated #
 # ============================================= #
 [Ee]xported[Oo]bj/
-.vs/
-/*.userprefs
-/*.csproj
-/*.pidb
-/*.suo
-/*.sln*
-/*.user
-/*.unityproj
-/*.booproj
-/.idea*/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
  
 # ============ #
 # OS generated #

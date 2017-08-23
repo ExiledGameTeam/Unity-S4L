@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1d4af1d3c8cefeb43ad84d9d31fac29c
+timeCreated: 1492090431
+licenseType: Free
+NativeFormatImporter:
+  userData: <svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 181.5 78.57"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Light</title><path
+    class="cls-1" d="M448.4,241.31h12.07v65.84h19.86v11H448.4Z" transform="translate(-448.4
+    -240.43)"/><path class="cls-1" d="M485.6,241.31h12.07v76.82H485.6Z" transform="translate(-448.4
+    -240.43)"/><path class="cls-1" d="M524.56,275.33h16.9v24.36c0,12.29-6.15,19.31-18,19.31s-18-7-18-19.31V259.75c0-12.29,6.15-19.31,18-19.31s18,7,18,19.31v7.46H530V259c0-5.49-2.41-7.57-6.25-7.57s-6.25,2.09-6.25,7.57v41.48c0,5.49,2.41,7.46,6.25,7.46s6.25-2,6.25-7.46V286.3h-5.49Z"
+    transform="translate(-448.4 -240.43)"/><path class="cls-1" d="M561.32,318.13H549.25V241.31h12.07v32.92H575V241.31h12.29v76.82H575V285.21H561.32Z"
+    transform="translate(-448.4 -240.43)"/><path class="cls-1" d="M592.59,241.31H629.9v11H617.28v65.84H605.21V252.28H592.59Z"
+    transform="translate(-448.4 -240.43)"/></svg>
+  assetBundleName: 
+  assetBundleVariant: 
