@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
-  m_Name: 6-01
+  m_Name: "t\u0142o"
   m_EditorClassIdentifier: 
-  _lastTimeModified: 636390365203603379
-  _documentAsset: {fileID: 114221700443375816}
-  _sharedMesh: {fileID: 43730429720605890}
+  _lastTimeModified: 636391021530066664
+  _documentAsset: {fileID: 114681078974378574}
+  _sharedMesh: {fileID: 43987040867279796}
   _antialiasing: 0
   _generateCollider: 0
   _keepSVGFile: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
   _optimizeMesh: 1
   _generateNormals: 0
   _generateTangents: 0
-  _scale: 0.01
+  _scale: 0.15
   _vpm: 1000
   _depthOffset: 0.01
   _compressDepth: 1
@@ -40,16 +40,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 39.693996
-    height: 19.981998
+    width: 595.41003
+    height: 299.73
   _useLayers: 0
   _layers: []
---- !u!43 &43730429720605890
+--- !u!43 &43987040867279796
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 6-01
+  m_Name: "t\u0142o"
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -59,8 +59,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 4
     localAABB:
-      m_Center: {x: -0.0000019073486, y: -19.981995, z: 0}
-      m_Extent: {x: 19.846996, y: 9.990995, z: 0}
+      m_Center: {x: -0.000061035156, y: -299.72995, z: 0}
+      m_Extent: {x: 297.70496, y: 149.86496, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -112,7 +112,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 64
-    _typelessdata: a7c69ec1afc8efc100000000cb8891ffa5c69e4122db1fc100000000cb8891ffa5c69e41afc8efc100000000cb8891ffa7c69ec122db1fc100000000cb8891ff
+    _typelessdata: 3eda94c326cce0c300000000cb8891ff3ada944371dd15c300000000cb8891ff3ada944326cce0c300000000cb8891ff3eda94c371dd15c300000000cb8891ff
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -166,13 +166,13 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: -0.0000019073486, y: -19.981995, z: 0}
-    m_Extent: {x: 19.846996, y: 9.990995, z: 0}
+    m_Center: {x: -0.000061035156, y: -299.72995, z: 0}
+    m_Extent: {x: 297.70496, y: 149.86496, z: 0}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
---- !u!114 &114221700443375816
+--- !u!114 &114681078974378574
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
