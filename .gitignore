@@ -2,8 +2,8 @@
 # Unity generated #
 # =============== #
 [Tt]emp/
-[Oo]bj/
-[Bb]uild
+*/[Oo]bj/*
+*/Build/*
 */Library/*
 sysinfo.txt
 *.stackdump
