@@ -582,7 +582,7 @@ namespace TeamUtility.IO
 #if UNITY_5
 				Cursor.visible = false;
 #else
-				Cursor.visible = false;
+				Screen.showCursor = false;
 #endif
 				InputManager.SetInputConfiguration(_joystickConfiguration, PlayerID.One);
 				Debug.Log("Current Input Device: Joystick");
@@ -592,7 +592,7 @@ namespace TeamUtility.IO
 #if UNITY_5
 				Cursor.visible = true;
 #else
-				Cursor.visible = true;
+				Screen.showCursor = true;
 #endif
 				InputManager.SetInputConfiguration(_keyboardConfiguration, PlayerID.One);
 				Debug.Log("Current Input Device: KeyboardAndMouse");
@@ -637,7 +637,7 @@ namespace TeamUtility.IO
 #if UNITY_5
 			Cursor.visible = true;
 #else
-			Cursor.visible = true;
+			Screen.showCursor = true;
 #endif
 			StopAllCoroutines();
 		}
