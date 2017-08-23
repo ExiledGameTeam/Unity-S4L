@@ -15,6 +15,7 @@ public class LunaControl_v2 : MonoBehaviour
     public float sneakSpeed = 0.8f;
     public float trotSpeed = 1.5f;
     public float galopSpeed = 1.5f;
+    public float GalopAccelerate = 0f;
     public float jumpforceReference;
 
     bool facingRight = true;
@@ -27,6 +28,7 @@ public class LunaControl_v2 : MonoBehaviour
     public float jumpDelay = 1f;
     public bool canDoubleJump = false;
     public bool DoubleJumped = false;
+    public bool LongJump = false;
 
     public float _timeHeld = 0.0f;
     public float timeForFullJump = 10f;
@@ -42,6 +44,8 @@ public class LunaControl_v2 : MonoBehaviour
 
     public float jumpForce = 46f;
     public float jumpForceBase = 0f;
+    public float LongjumpForceBase = 0f;
+    public float LongJumpForwardForce = 0f;
     public float DoubleJumpForce = 0f;
     public float DoubleJumpForceBase = 0f;
 
@@ -149,21 +153,23 @@ public class LunaControl_v2 : MonoBehaviour
             troting = false;
             anim.SetBool("Troting", false);
         }
-        //galop animation
+//###############################################
+//#                   GALOP                     #
+//###############################################
         bool galop = InputManager.GetButton("Sprint");
-        if (!sneaking)
+        if (!sneaking && grounded)
         {
 
             if (galop && troting && Mathf.Abs(move) == 1 && facingRight)
             {
-                t += (Time.deltaTime);
+                t += (Time.deltaTime * GalopAccelerate);
                 RB2D.velocity = new Vector2((speed * trotSpeed) + galopSpeed * (Mathf.Lerp(0f, 2f, t)), gameObject.GetComponent<Rigidbody2D>().velocity.y);
                 anim.SetBool("Galop", true);
 
             }
             else if (galop && troting && Mathf.Abs(move) == 1 && !facingRight)
             {
-                t += (Time.deltaTime);
+                t += (Time.deltaTime * GalopAccelerate);
                 RB2D.velocity = new Vector2((speed * trotSpeed) - galopSpeed * (Mathf.Lerp(0f, 2f, t)), gameObject.GetComponent<Rigidbody2D>().velocity.y);
                 anim.SetBool("Galop", true);
             }
@@ -181,69 +187,149 @@ public class LunaControl_v2 : MonoBehaviour
     void Update()
     {
 
-//Jump
+//##############################################
+//#                     JUMP                   #
+//##############################################
+        if (t > 1)
+        {
+            LongJump = true;
+        }
+        if (t < 1)
+        {
+            LongJump = false;
+        }
         grounded = Physics2D.OverlapCircle(groundcheck.position, groundCheckRadius, groundLayer);
-
-        if (grounded && !InputManager.GetButton("Jump"))
+        if (!LongJump)
         {
-            StartCoroutine("ExecuteAfterTime");
-        }
-        else if (InputManager.GetButtonDown("Jump"))
-        {
-            StopCoroutine("ExecuteAfterTime");
-        }
-        if (InputManager.GetButtonUp("Jump"))
-        {
-            tJumpSpeed = 0f;
-        }
-        if (readyToJump && !InputManager.GetButton("Jump"))
-        {
-            CanHoldJump = true;
-        }
-        if (jumpforceReference == 0 || InputManager.GetButtonUp("Jump"))
-        {
-            CanHoldJump = false;
-        }
-        if (InputManager.GetButtonDown("Jump") && grounded)
-        {
-            RB2D.AddForce(new Vector2(0, jumpForceBase));
-            readyToJump = false;
-        }
-        if (InputManager.GetButton("Jump") && CanHoldJump)
-        {
-            Jump();
-            tJumpSpeed += (Time.fixedDeltaTime * timeForFullJump);
-        }
-
-        if (grounded)
-        {
-            canDoubleJump = false;
-            DoubleJumped = false;
-        }
-        if (!grounded && canDoubleJump && InputManager.GetButtonUp("Jump"))
-        {
-            DoubleJumped = true;
-        }
-        if (!grounded)
-        {
-            if (!InputManager.GetButton("Jump"))
+            if (grounded && !InputManager.GetButton("Jump"))
             {
-                canDoubleJump = true;
+                StartCoroutine("ExecuteAfterTime");
+            }
+            else if (InputManager.GetButtonDown("Jump"))
+            {
+                StopCoroutine("ExecuteAfterTime");
+            }
+            if (InputManager.GetButtonUp("Jump"))
+            {
+                tJumpSpeed = 0f;
+            }
+            if (readyToJump && !InputManager.GetButton("Jump"))
+            {
+                CanHoldJump = true;
+            }
+            if (jumpforceReference == 0 || InputManager.GetButtonUp("Jump"))
+            {
+                CanHoldJump = false;
+            }
+            if (InputManager.GetButtonDown("Jump") && grounded)
+            {
+                RB2D.AddForce(new Vector2(0, jumpForceBase));
+                readyToJump = false;
+            }
+            if (InputManager.GetButton("Jump") && CanHoldJump)
+            {
+                Jump();
+                tJumpSpeed += (Time.fixedDeltaTime * timeForFullJump);
+            }
+
+            if (grounded)
+            {
+                canDoubleJump = false;
+                DoubleJumped = false;
+            }
+            if (!grounded && canDoubleJump && InputManager.GetButtonUp("Jump"))
+            {
+                DoubleJumped = true;
+            }
+            if (!grounded)
+            {
+                if (!InputManager.GetButton("Jump"))
+                {
+                    canDoubleJump = true;
+                }
+            }
+            if (!DoubleJumped && !grounded && canDoubleJump && InputManager.GetButtonDown("Jump"))
+            {
+                RB2D.velocity = new Vector2(RB2D.velocity.x, 0);
+                RB2D.AddForce(new Vector2(0, DoubleJumpForceBase));
+            }
+            if (!DoubleJumped && !grounded && canDoubleJump && InputManager.GetButton("Jump"))
+            {
+                DoubleJump();
+                tDoubleJumpSpeed += (Time.deltaTime * timeForFullDoubleJump);
             }
         }
-        if (!DoubleJumped && !grounded && canDoubleJump && InputManager.GetButtonDown("Jump"))
+        if (LongJump)
         {
-            RB2D.velocity = new Vector2(RB2D.velocity.x, 0);
-            RB2D.AddForce(new Vector2(0, DoubleJumpForceBase));
-        }
-        if (!DoubleJumped && !grounded && canDoubleJump && InputManager.GetButton("Jump"))
-        {
-            DoubleJump();
-            tDoubleJumpSpeed += (Time.deltaTime * timeForFullDoubleJump);
+            if (grounded && !InputManager.GetButton("Jump"))
+            {
+                StartCoroutine("ExecuteAfterTime");
+            }
+            else if (InputManager.GetButtonDown("Jump"))
+            {
+                StopCoroutine("ExecuteAfterTime");
+            }
+            if (InputManager.GetButtonUp("Jump"))
+            {
+                tJumpSpeed = 0f;
+            }
+            if (readyToJump && !InputManager.GetButton("Jump"))
+            {
+                CanHoldJump = true;
+            }
+            if (jumpforceReference == 0 || InputManager.GetButtonUp("Jump"))
+            {
+                CanHoldJump = false;
+            }
+            if (InputManager.GetButtonDown("Jump") && grounded)
+            {
+                if (facingRight)
+                {
+                    RB2D.AddForce(new Vector2(LongJumpForwardForce, LongjumpForceBase));
+                    readyToJump = false;
+                }
+                if (!facingRight)
+                {
+                    RB2D.AddForce(new Vector2(-LongJumpForwardForce, LongjumpForceBase));
+                    readyToJump = false;
+                }
+            }
+            if (InputManager.GetButton("Jump") && CanHoldJump)
+            {
+                Jump();
+                tJumpSpeed += (Time.fixedDeltaTime * timeForFullJump);
+            }
+
+            if (grounded)
+            {
+                canDoubleJump = false;
+                DoubleJumped = false;
+            }
+            if (!grounded && canDoubleJump && InputManager.GetButtonUp("Jump"))
+            {
+                DoubleJumped = true;
+            }
+            if (!grounded)
+            {
+                if (!InputManager.GetButton("Jump"))
+                {
+                    canDoubleJump = true;
+                }
+            }
+            if (!DoubleJumped && !grounded && canDoubleJump && InputManager.GetButtonDown("Jump"))
+            {
+                RB2D.velocity = new Vector2(RB2D.velocity.x, 0);
+                RB2D.AddForce(new Vector2(0, DoubleJumpForceBase));
+            }
+            if (!DoubleJumped && !grounded && canDoubleJump && InputManager.GetButton("Jump"))
+            {
+                DoubleJump();
+                tDoubleJumpSpeed += (Time.deltaTime * timeForFullDoubleJump);
+            }
         }
 
 
-        if (InputManager.GetButton("Jump"))
+            if (InputManager.GetButton("Jump"))
         {
             jumping = true;
         }
@@ -257,7 +343,7 @@ public class LunaControl_v2 : MonoBehaviour
             tJumpSpeed = 0f;
         }
         jumpforceReference = jumpForce * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed));
-        //Hover
+//Hover
         if (!grounded)
         {
             if(InputManager.GetAxisRaw("Hover") == 1 || InputManager.GetButton("Hover"))
@@ -279,7 +365,7 @@ public class LunaControl_v2 : MonoBehaviour
     }
     public void Jump()
     {
-         RB2D.AddForce(new Vector2(0, jumpForce * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed))));
+         RB2D.AddForce(new Vector2(0, jumpForce / 2 * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed))));
     }
     public void DoubleJump()
     {
