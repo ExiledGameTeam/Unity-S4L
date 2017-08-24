@@ -218,7 +218,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1644575423391846}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -108.32, y: -120.6, z: 0.035}
+  m_LocalPosition: {x: -111.98, y: -119.84, z: 0.035}
   m_LocalScale: {x: 3.9057467, y: 3.9057484, z: 3.9057484}
   m_Children:
   - {fileID: 4622379875790164}
@@ -710,7 +710,7 @@ MonoBehaviour:
   speed: 0
   sneakSpeed: 0.8
   trotSpeed: 3.6
-  galopSpeed: 1.5
+  galopSpeed: 80
   GalopAccelerate: 2
   jumpforceReference: 0
   grounded: 0
@@ -719,7 +719,9 @@ MonoBehaviour:
   jumpDelay: 0.01
   canDoubleJump: 0
   DoubleJumped: 0
-  CanLongJump: 0
+  JustDoubleJumped: 0
+  LongJump: 0
+  JustJumped: 0
   _timeHeld: 0
   timeForFullJump: 2
   timeForFullDoubleJump: 4
@@ -732,8 +734,11 @@ MonoBehaviour:
   groundcheck: {fileID: 4848068293301252}
   jumpForce: 10
   jumpForceBase: 220
+  LongjumpForceBase: 180
+  LongJumpForwardForce: 100
   DoubleJumpForce: 15
   DoubleJumpForceBase: 220
+  FlySpeed: 6
   HoverForce: -1
 --- !u!114 &114871436066332606
 MonoBehaviour:
@@ -788,6 +793,8 @@ SpriteRenderer:
   m_Size: {x: 11.08, y: 4.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!212 &212076042988027398
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -828,6 +835,8 @@ SpriteRenderer:
   m_Size: {x: 1.31, y: 1.23}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!212 &212764243522857192
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -868,3 +877,5 @@ SpriteRenderer:
   m_Size: {x: 11.08, y: 4.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
