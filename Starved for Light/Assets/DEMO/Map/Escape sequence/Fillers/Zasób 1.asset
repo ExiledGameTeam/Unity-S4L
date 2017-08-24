@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: "Zas\xF3b 1"
   m_EditorClassIdentifier: 
-  _lastTimeModified: 636391796279722703
-  _documentAsset: {fileID: 114763448782427788}
-  _sharedMesh: {fileID: 43579969731666548}
+  _lastTimeModified: 636391801917157790
+  _documentAsset: {fileID: 114970012194472370}
+  _sharedMesh: {fileID: 43049294537534622}
   _antialiasing: 0
   _generateCollider: 0
   _keepSVGFile: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
     height: 31.858501
   _useLayers: 0
   _layers: []
---- !u!43 &43579969731666548
+--- !u!43 &43049294537534622
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -173,6 +173,21 @@ Mesh:
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
 --- !u!114 &114763448782427788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 
+--- !u!114 &114970012194472370
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

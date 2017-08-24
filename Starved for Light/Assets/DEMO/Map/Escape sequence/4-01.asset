@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: 4-01
   m_EditorClassIdentifier: 
-  _lastTimeModified: 636391794146930920
-  _documentAsset: {fileID: 114322444563130676}
-  _sharedMesh: {fileID: 43050664403409822}
+  _lastTimeModified: 636391800712561998
+  _documentAsset: {fileID: 114901610402326560}
+  _sharedMesh: {fileID: 43500933113772670}
   _antialiasing: 0
   _generateCollider: 0
   _keepSVGFile: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
     height: 109.666504
   _useLayers: 0
   _layers: []
---- !u!43 &43050664403409822
+--- !u!43 &43500933113772670
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -173,6 +173,21 @@ Mesh:
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
 --- !u!114 &114322444563130676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 
+--- !u!114 &114901610402326560
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
