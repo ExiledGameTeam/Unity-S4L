@@ -28,7 +28,9 @@ public class LunaControl_v2 : MonoBehaviour
     public float jumpDelay = 1f;
     public bool canDoubleJump = false;
     public bool DoubleJumped = false;
+    public bool JustDoubleJumped = false;
     public bool LongJump = false;
+    public bool JustJumped = false;
 
     public float _timeHeld = 0.0f;
     public float timeForFullJump = 10f;
@@ -48,6 +50,7 @@ public class LunaControl_v2 : MonoBehaviour
     public float LongJumpForwardForce = 0f;
     public float DoubleJumpForce = 0f;
     public float DoubleJumpForceBase = 0f;
+    public float FlySpeed = 0f;
 
     public float HoverForce = 0f;
 
@@ -121,11 +124,11 @@ public class LunaControl_v2 : MonoBehaviour
             speed = (Mathf.Lerp(speed, move, 0.1f));
             t2 = Mathf.Abs(speed);
         }
-        if (!sneaking)
+        if (!sneaking && grounded)
         {
             RB2D.velocity = new Vector2(speed * trotSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
         }
-        if (sneaking)
+        if (sneaking && grounded)
         {
             RB2D.velocity = new Vector2(speed * sneakSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
         }
@@ -163,14 +166,14 @@ public class LunaControl_v2 : MonoBehaviour
             if (galop && troting && Mathf.Abs(move) == 1 && facingRight)
             {
                 t += (Time.deltaTime * GalopAccelerate);
-                RB2D.velocity = new Vector2((speed * trotSpeed) + galopSpeed * (Mathf.Lerp(0f, 2f, t)), gameObject.GetComponent<Rigidbody2D>().velocity.y);
+                RB2D.AddForce(new Vector2((speed * trotSpeed) + galopSpeed * (Mathf.Lerp(0f, 2f, t)), gameObject.GetComponent<Rigidbody2D>().velocity.y));
                 anim.SetBool("Galop", true);
 
             }
             else if (galop && troting && Mathf.Abs(move) == 1 && !facingRight)
             {
                 t += (Time.deltaTime * GalopAccelerate);
-                RB2D.velocity = new Vector2((speed * trotSpeed) - galopSpeed * (Mathf.Lerp(0f, 2f, t)), gameObject.GetComponent<Rigidbody2D>().velocity.y);
+                RB2D.AddForce(new Vector2((speed * trotSpeed) - galopSpeed * (Mathf.Lerp(0f, 2f, t)), gameObject.GetComponent<Rigidbody2D>().velocity.y));
                 anim.SetBool("Galop", true);
             }
             else
@@ -183,13 +186,13 @@ public class LunaControl_v2 : MonoBehaviour
         {
             t = 0;
         }
-    }
-    void Update()
-    {
-
 //##############################################
 //#                     JUMP                   #
 //##############################################
+    }
+
+    void Update()
+    {
         if (t > 1)
         {
             LongJump = true;
@@ -221,9 +224,17 @@ public class LunaControl_v2 : MonoBehaviour
             {
                 CanHoldJump = false;
             }
+            if (!CanHoldJump)
+            {
+                JustJumped = false;
+            }
             if (InputManager.GetButtonDown("Jump") && grounded)
             {
+                JustJumped = true;
                 RB2D.AddForce(new Vector2(0, jumpForceBase));
+            }
+            if (!grounded)
+            {
                 readyToJump = false;
             }
             if (InputManager.GetButton("Jump") && CanHoldJump)
@@ -281,16 +292,16 @@ public class LunaControl_v2 : MonoBehaviour
             {
                 CanHoldJump = false;
             }
+            if (!CanHoldJump)
+            {
+                JustJumped = false;
+            }
             if (InputManager.GetButtonDown("Jump") && grounded)
             {
-                if (facingRight)
+                JustJumped = true;
+                RB2D.AddForce(new Vector2(0, LongjumpForceBase));
+                if (!grounded)
                 {
-                    RB2D.AddForce(new Vector2(LongJumpForwardForce, LongjumpForceBase));
-                    readyToJump = false;
-                }
-                if (!facingRight)
-                {
-                    RB2D.AddForce(new Vector2(-LongJumpForwardForce, LongjumpForceBase));
                     readyToJump = false;
                 }
             }
@@ -304,10 +315,16 @@ public class LunaControl_v2 : MonoBehaviour
             {
                 canDoubleJump = false;
                 DoubleJumped = false;
+                JustDoubleJumped = false;
             }
+
             if (!grounded && canDoubleJump && InputManager.GetButtonUp("Jump"))
             {
                 DoubleJumped = true;
+            }
+            if (!grounded && canDoubleJump && InputManager.GetButtonDown("Jump"))
+            {
+                JustDoubleJumped = true;
             }
             if (!grounded)
             {
@@ -343,6 +360,14 @@ public class LunaControl_v2 : MonoBehaviour
             tJumpSpeed = 0f;
         }
         jumpforceReference = jumpForce * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed));
+        if ((!grounded && !LongJump) || JustDoubleJumped)
+        {
+            RB2D.velocity = new Vector2(speed * trotSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+        }
+        if (!readyToJump && !JustJumped)
+        {
+            CanHoldJump = false;
+        }
 //Hover
         if (!grounded)
         {
@@ -365,11 +390,26 @@ public class LunaControl_v2 : MonoBehaviour
     }
     public void Jump()
     {
-         RB2D.AddForce(new Vector2(0, jumpForce / 2 * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed))));
+        if (LongJump)
+        {
+            RB2D.AddForce(new Vector2(0, jumpForce / 4 * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed))));
+        }
+        if (!LongJump)
+        {
+            RB2D.AddForce(new Vector2(0, jumpForce * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed))));
+        }
+
     }
     public void DoubleJump()
     {
-        RB2D.AddForce(new Vector2(0, DoubleJumpForce * (Mathf.Lerp(_maxJumpForce, 0f, tDoubleJumpSpeed))));
+        if (LongJump)
+        {
+            RB2D.AddForce(new Vector2(0, DoubleJumpForce * (Mathf.Lerp(_maxJumpForce, 0f, tDoubleJumpSpeed))));
+        }
+        if (!LongJump)
+        {
+            RB2D.AddForce(new Vector2(0, DoubleJumpForce * (Mathf.Lerp(_maxJumpForce, 0f, tDoubleJumpSpeed))));
+        }
     }
     void Flip()
     {
