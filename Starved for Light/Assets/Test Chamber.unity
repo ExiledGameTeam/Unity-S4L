@@ -1345,11 +1345,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 33826159949837896, guid: 6bc794bb5a1610d4fb94976e87f266e3,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 23766218426894120, guid: 6bc794bb5a1610d4fb94976e87f266e3,
         type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -1358,6 +1353,11 @@ Prefab:
     - target: {fileID: 23766218426894120, guid: 6bc794bb5a1610d4fb94976e87f266e3,
         type: 2}
       propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33826159949837896, guid: 6bc794bb5a1610d4fb94976e87f266e3,
+        type: 2}
+      propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3109,7 +3109,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1520007878}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 49.06, y: 3.35, z: 0}
+  m_LocalPosition: {x: 58.03, y: 3.19, z: 0}
   m_LocalScale: {x: 29.35908, y: 0.41562274, z: 1}
   m_Children: []
   m_Father: {fileID: 1606736798}
@@ -3799,7 +3799,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1794624916}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.57, y: 1.9, z: 0}
+  m_LocalPosition: {x: 51.02, y: 1.85, z: 0}
   m_LocalScale: {x: 29.35908, y: 0.3864045, z: 1}
   m_Children: []
   m_Father: {fileID: 1606736798}
