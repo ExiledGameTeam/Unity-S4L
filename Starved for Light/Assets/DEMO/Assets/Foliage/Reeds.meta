@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Starved for Light/Assets/DEMO/Assets/Foliage/Reeds.meta
 guid: 69e7b81cfcfb2d940abff117c1b5d0bd
 folderAsset: yes
 timeCreated: 1503668182
+=======
+guid: e7ef8c6dee3a3a74da22da04e72f71c9
+folderAsset: yes
+timeCreated: 1503666400
+>>>>>>> 4173f5d0c75fa9ec83695db400a5edc348ee7e6a:Starved for Light/Assets/DEMO/Assets/Foliage/Reeds.meta
 licenseType: Free
 DefaultImporter:
   userData: 
