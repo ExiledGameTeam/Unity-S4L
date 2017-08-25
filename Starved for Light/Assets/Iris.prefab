@@ -707,6 +707,7 @@ MonoBehaviour:
   tJumpSpeed: 0
   tDoubleJumpSpeed: 0
   tHoverSpeed: 0
+  FlyT: 0
   speed: 0
   sneakSpeed: 0.8
   trotSpeed: 3.6
@@ -733,7 +734,7 @@ MonoBehaviour:
     m_Bits: 256
   groundcheck: {fileID: 4848068293301252}
   jumpForce: 10
-  jumpForceBase: 190
+  jumpForceBase: 180
   LongjumpForceBase: 150
   LongJumpForwardForce: 100
   DoubleJumpForce: 15
