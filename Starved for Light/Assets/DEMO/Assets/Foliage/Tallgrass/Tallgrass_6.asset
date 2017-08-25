@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: Tallgrass_6
   m_EditorClassIdentifier: 
-  _lastTimeModified: 636392818990737344
+  _lastTimeModified: 636392825357964239
   _documentAsset: {fileID: 114749667224734710}
-  _sharedMesh: {fileID: 43988630324868346}
+  _sharedMesh: {fileID: 43367675646923996}
   _antialiasing: 0
   _generateCollider: 0
   _keepSVGFile: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
     height: 2.9974
   _useLayers: 0
   _layers: []
---- !u!43 &43988630324868346
+--- !u!43 &43367675646923996
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

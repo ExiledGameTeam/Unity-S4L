@@ -1841,7 +1841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638604600419
-  _vectorGraphics: {fileID: 11400000, guid: cbdc9b050c81bfa4b9f27d042c78f057, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -2025,7 +2025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638594713944
-  _vectorGraphics: {fileID: 11400000, guid: f89460c14d9a38647bc1277d480c7957, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -2669,7 +2669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649562034422
-  _vectorGraphics: {fileID: 11400000, guid: 959e49d1e6b50c1469eff02fef76f298, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -2922,8 +2922,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2962,7 +2961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392819108260012
-  _vectorGraphics: {fileID: 11400000, guid: 549dd757c62b2164a99152905eb116f9, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -3651,8 +3650,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3691,7 +3689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392819108260012
-  _vectorGraphics: {fileID: 11400000, guid: 549dd757c62b2164a99152905eb116f9, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -4826,7 +4824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638604600419
-  _vectorGraphics: {fileID: 11400000, guid: cbdc9b050c81bfa4b9f27d042c78f057, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -5843,8 +5841,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5883,7 +5880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392819108260012
-  _vectorGraphics: {fileID: 11400000, guid: 549dd757c62b2164a99152905eb116f9, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -5975,7 +5972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649554809178
-  _vectorGraphics: {fileID: 11400000, guid: d8c63b7f3ad187d4b958f050884fd9b7, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -7564,7 +7561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032465404
-  _vectorGraphics: {fileID: 11400000, guid: d7a43b5ab6ca6b44687c0f71ee4f15d8, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -7800,8 +7797,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7840,7 +7836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392819108260012
-  _vectorGraphics: {fileID: 11400000, guid: 549dd757c62b2164a99152905eb116f9, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -8392,7 +8388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638600680942
-  _vectorGraphics: {fileID: 11400000, guid: e26f7705c8efd0f4095fc09473cce11e, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -8536,8 +8532,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10714,7 +10709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638600680942
-  _vectorGraphics: {fileID: 11400000, guid: e26f7705c8efd0f4095fc09473cce11e, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -11082,7 +11077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032036610
-  _vectorGraphics: {fileID: 11400000, guid: 7ded0989a28f7964298532f57cce92cc, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -11226,8 +11221,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11266,7 +11260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392819108260012
-  _vectorGraphics: {fileID: 11400000, guid: 549dd757c62b2164a99152905eb116f9, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -11318,8 +11312,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11358,7 +11351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392819108260012
-  _vectorGraphics: {fileID: 11400000, guid: 549dd757c62b2164a99152905eb116f9, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -11594,8 +11587,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12146,8 +12138,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12186,7 +12177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392819108260012
-  _vectorGraphics: {fileID: 11400000, guid: 549dd757c62b2164a99152905eb116f9, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -12278,7 +12269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638600680942
-  _vectorGraphics: {fileID: 11400000, guid: e26f7705c8efd0f4095fc09473cce11e, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -12646,7 +12637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649562034422
-  _vectorGraphics: {fileID: 11400000, guid: 959e49d1e6b50c1469eff02fef76f298, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -12738,7 +12729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649562034422
-  _vectorGraphics: {fileID: 11400000, guid: 959e49d1e6b50c1469eff02fef76f298, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -12830,7 +12821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814030805791
-  _vectorGraphics: {fileID: 11400000, guid: d4f260d2cb8f54449a7fc46285fd68db, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -13782,7 +13773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649554809178
-  _vectorGraphics: {fileID: 11400000, guid: d8c63b7f3ad187d4b958f050884fd9b7, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -13874,7 +13865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638596470106
-  _vectorGraphics: {fileID: 11400000, guid: 745bc7fcd79d1804c8cb86c8d924f3dc, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -14751,8 +14742,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15343,7 +15333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649562034422
-  _vectorGraphics: {fileID: 11400000, guid: 959e49d1e6b50c1469eff02fef76f298, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -15579,8 +15569,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15619,7 +15608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392819108260012
-  _vectorGraphics: {fileID: 11400000, guid: 549dd757c62b2164a99152905eb116f9, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -16171,7 +16160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638603626624
-  _vectorGraphics: {fileID: 11400000, guid: 4b155c9070cc48c4c80e43ca15bd8e84, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -17718,7 +17707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814030805791
-  _vectorGraphics: {fileID: 11400000, guid: d4f260d2cb8f54449a7fc46285fd68db, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -17810,7 +17799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032465404
-  _vectorGraphics: {fileID: 11400000, guid: d7a43b5ab6ca6b44687c0f71ee4f15d8, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -18118,7 +18107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638596470106
-  _vectorGraphics: {fileID: 11400000, guid: 745bc7fcd79d1804c8cb86c8d924f3dc, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -18210,7 +18199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649554809178
-  _vectorGraphics: {fileID: 11400000, guid: d8c63b7f3ad187d4b958f050884fd9b7, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -18538,8 +18527,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19714,7 +19702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649554809178
-  _vectorGraphics: {fileID: 11400000, guid: d8c63b7f3ad187d4b958f050884fd9b7, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -19915,7 +19903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814030805791
-  _vectorGraphics: {fileID: 11400000, guid: d4f260d2cb8f54449a7fc46285fd68db, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -20099,7 +20087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638594713944
-  _vectorGraphics: {fileID: 11400000, guid: f89460c14d9a38647bc1277d480c7957, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -20191,7 +20179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649562034422
-  _vectorGraphics: {fileID: 11400000, guid: 959e49d1e6b50c1469eff02fef76f298, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -20519,8 +20507,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20800,8 +20787,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22164,8 +22150,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22296,7 +22281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649562034422
-  _vectorGraphics: {fileID: 11400000, guid: 959e49d1e6b50c1469eff02fef76f298, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -22348,8 +22333,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22388,7 +22372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392819108260012
-  _vectorGraphics: {fileID: 11400000, guid: 549dd757c62b2164a99152905eb116f9, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -23538,7 +23522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032465404
-  _vectorGraphics: {fileID: 11400000, guid: d7a43b5ab6ca6b44687c0f71ee4f15d8, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -24960,8 +24944,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25000,7 +24983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392819108260012
-  _vectorGraphics: {fileID: 11400000, guid: 549dd757c62b2164a99152905eb116f9, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -26429,7 +26412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638603626624
-  _vectorGraphics: {fileID: 11400000, guid: 4b155c9070cc48c4c80e43ca15bd8e84, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -27778,7 +27761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032465404
-  _vectorGraphics: {fileID: 11400000, guid: d7a43b5ab6ca6b44687c0f71ee4f15d8, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -30064,7 +30047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032465404
-  _vectorGraphics: {fileID: 11400000, guid: d7a43b5ab6ca6b44687c0f71ee4f15d8, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -30616,7 +30599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032036610
-  _vectorGraphics: {fileID: 11400000, guid: 7ded0989a28f7964298532f57cce92cc, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -32282,7 +32265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638600680942
-  _vectorGraphics: {fileID: 11400000, guid: e26f7705c8efd0f4095fc09473cce11e, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -33126,7 +33109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638594713944
-  _vectorGraphics: {fileID: 11400000, guid: f89460c14d9a38647bc1277d480c7957, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -34126,7 +34109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638603626624
-  _vectorGraphics: {fileID: 11400000, guid: 4b155c9070cc48c4c80e43ca15bd8e84, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -34526,7 +34509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032726771
-  _vectorGraphics: {fileID: 11400000, guid: 0c23f0bc87681ef499b75387596a4382, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -36884,7 +36867,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222224113}
   m_LocalRotation: {x: -0, y: -0, z: 0.03969481, w: 0.9992119}
-  m_LocalPosition: {x: -212.63, y: -143.49, z: 0}
+  m_LocalPosition: {x: -212.6, y: -143.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 878503728}
@@ -36902,8 +36885,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37126,7 +37108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638596470106
-  _vectorGraphics: {fileID: 11400000, guid: 745bc7fcd79d1804c8cb86c8d924f3dc, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -37402,7 +37384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638600680942
-  _vectorGraphics: {fileID: 11400000, guid: e26f7705c8efd0f4095fc09473cce11e, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -37954,8 +37936,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38454,7 +38435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032726771
-  _vectorGraphics: {fileID: 11400000, guid: 0c23f0bc87681ef499b75387596a4382, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -39051,7 +39032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649562034422
-  _vectorGraphics: {fileID: 11400000, guid: 959e49d1e6b50c1469eff02fef76f298, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -39287,8 +39268,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39603,7 +39583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638603626624
-  _vectorGraphics: {fileID: 11400000, guid: 4b155c9070cc48c4c80e43ca15bd8e84, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -41786,8 +41766,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41826,7 +41805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392819108260012
-  _vectorGraphics: {fileID: 11400000, guid: 549dd757c62b2164a99152905eb116f9, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -41970,8 +41949,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42010,7 +41988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392819108260012
-  _vectorGraphics: {fileID: 11400000, guid: 549dd757c62b2164a99152905eb116f9, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -42194,7 +42172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814030805791
-  _vectorGraphics: {fileID: 11400000, guid: d4f260d2cb8f54449a7fc46285fd68db, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -42922,7 +42900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814030805791
-  _vectorGraphics: {fileID: 11400000, guid: d4f260d2cb8f54449a7fc46285fd68db, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -42974,8 +42952,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -44593,7 +44570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814030805791
-  _vectorGraphics: {fileID: 11400000, guid: d4f260d2cb8f54449a7fc46285fd68db, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -44921,8 +44898,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45513,7 +45489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649554809178
-  _vectorGraphics: {fileID: 11400000, guid: d8c63b7f3ad187d4b958f050884fd9b7, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -46579,7 +46555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638599821270
-  _vectorGraphics: {fileID: 11400000, guid: 864a53ca56865a044b8826d330e493d0, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -46671,7 +46647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649554809178
-  _vectorGraphics: {fileID: 11400000, guid: d8c63b7f3ad187d4b958f050884fd9b7, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -46763,7 +46739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649554809178
-  _vectorGraphics: {fileID: 11400000, guid: d8c63b7f3ad187d4b958f050884fd9b7, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -47367,8 +47343,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47591,7 +47566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649562034422
-  _vectorGraphics: {fileID: 11400000, guid: 959e49d1e6b50c1469eff02fef76f298, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -47683,7 +47658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814030805791
-  _vectorGraphics: {fileID: 11400000, guid: d4f260d2cb8f54449a7fc46285fd68db, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -48235,7 +48210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032036610
-  _vectorGraphics: {fileID: 11400000, guid: 7ded0989a28f7964298532f57cce92cc, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -49523,7 +49498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638604600419
-  _vectorGraphics: {fileID: 11400000, guid: cbdc9b050c81bfa4b9f27d042c78f057, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -50373,7 +50348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649554809178
-  _vectorGraphics: {fileID: 11400000, guid: d8c63b7f3ad187d4b958f050884fd9b7, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -52613,7 +52588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649562034422
-  _vectorGraphics: {fileID: 11400000, guid: 959e49d1e6b50c1469eff02fef76f298, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -53534,7 +53509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392649554809178
-  _vectorGraphics: {fileID: 11400000, guid: d8c63b7f3ad187d4b958f050884fd9b7, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -54454,7 +54429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032465404
-  _vectorGraphics: {fileID: 11400000, guid: d7a43b5ab6ca6b44687c0f71ee4f15d8, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -54546,7 +54521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638594713944
-  _vectorGraphics: {fileID: 11400000, guid: f89460c14d9a38647bc1277d480c7957, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -56958,7 +56933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638603626624
-  _vectorGraphics: {fileID: 11400000, guid: 4b155c9070cc48c4c80e43ca15bd8e84, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -57142,7 +57117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032726771
-  _vectorGraphics: {fileID: 11400000, guid: 0c23f0bc87681ef499b75387596a4382, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -57194,8 +57169,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -57726,7 +57700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638596470106
-  _vectorGraphics: {fileID: 11400000, guid: 745bc7fcd79d1804c8cb86c8d924f3dc, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -59716,7 +59690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638603626624
-  _vectorGraphics: {fileID: 11400000, guid: 4b155c9070cc48c4c80e43ca15bd8e84, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -60176,7 +60150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032036610
-  _vectorGraphics: {fileID: 11400000, guid: 7ded0989a28f7964298532f57cce92cc, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -60956,7 +60930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638596470106
-  _vectorGraphics: {fileID: 11400000, guid: 745bc7fcd79d1804c8cb86c8d924f3dc, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -61697,8 +61671,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -61737,7 +61710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392819108260012
-  _vectorGraphics: {fileID: 11400000, guid: 549dd757c62b2164a99152905eb116f9, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -62928,8 +62901,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -64192,7 +64164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638603626624
-  _vectorGraphics: {fileID: 11400000, guid: 4b155c9070cc48c4c80e43ca15bd8e84, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -64850,7 +64822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392814032726771
-  _vectorGraphics: {fileID: 11400000, guid: 0c23f0bc87681ef499b75387596a4382, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -65218,7 +65190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636392638604600419
-  _vectorGraphics: {fileID: 11400000, guid: cbdc9b050c81bfa4b9f27d042c78f057, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
