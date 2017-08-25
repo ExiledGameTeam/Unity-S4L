@@ -1345,6 +1345,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 33826159949837896, guid: 6bc794bb5a1610d4fb94976e87f266e3,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 23766218426894120, guid: 6bc794bb5a1610d4fb94976e87f266e3,
         type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -1355,10 +1360,40 @@ Prefab:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 33826159949837896, guid: 6bc794bb5a1610d4fb94976e87f266e3,
+    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
         type: 2}
-      propertyPath: m_Mesh
-      value: 
+      propertyPath: jumpForceBase
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
+        type: 2}
+      propertyPath: DoubleJumpForceBase
+      value: 260
+      objectReference: {fileID: 0}
+    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
+        type: 2}
+      propertyPath: FlySpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
+        type: 2}
+      propertyPath: FlyBackForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
+        type: 2}
+      propertyPath: LongjumpForceBase
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
+        type: 2}
+      propertyPath: LongJumpForwardForce
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
+        type: 2}
+      propertyPath: MaxFlySpeed
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6bc794bb5a1610d4fb94976e87f266e3, type: 2}
