@@ -51,8 +51,10 @@ public class LunaControl_v2 : MonoBehaviour
     public float DoubleJumpForce = 0f;
     public float DoubleJumpForceBase = 0f;
     public float FlySpeed = 0f;
+    public float MaxFlySpeed = 0f;
 
     public float HoverForce = 0f;
+    public float IrisSpeedX = 0f;
 
     Animator anim;
 
@@ -193,6 +195,7 @@ public class LunaControl_v2 : MonoBehaviour
 
     void Update()
     {
+        IrisSpeedX = RB2D.velocity.x;
         if (t > 1)
         {
             LongJump = true;
@@ -362,7 +365,17 @@ public class LunaControl_v2 : MonoBehaviour
         jumpforceReference = jumpForce * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed));
         if ((!grounded && !LongJump) || JustDoubleJumped)
         {
-            RB2D.velocity = new Vector2(speed * trotSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+            RB2D.AddForce(new Vector2(speed * FlySpeed, RB2D.velocity.y));
+        }
+        if (RB2D.velocity.x > MaxFlySpeed && facingRight && !LongJump)
+        {
+            Debug.Log("derp");
+            RB2D.velocity = new Vector2(MaxFlySpeed, RB2D.velocity.y);
+        }
+        if (RB2D.velocity.x < -MaxFlySpeed && !facingRight && !LongJump)
+        {
+            Debug.Log("derp2");
+            RB2D.velocity = new Vector2(-MaxFlySpeed, RB2D.velocity.y);
         }
         if (!readyToJump && !JustJumped)
         {
@@ -392,7 +405,7 @@ public class LunaControl_v2 : MonoBehaviour
     {
         if (LongJump)
         {
-            RB2D.AddForce(new Vector2(0, jumpForce / 4 * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed))));
+            RB2D.AddForce(new Vector2(0, jumpForce / 3 * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed))));
         }
         if (!LongJump)
         {
