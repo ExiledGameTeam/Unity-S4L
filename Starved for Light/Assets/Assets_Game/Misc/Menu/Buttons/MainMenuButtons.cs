@@ -115,8 +115,8 @@ public class MainMenuButtons : MonoBehaviour {
     }
     IEnumerator ExecuteAfterTime()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
 
-        Application.LoadLevel("2");
+        Application.LoadLevel("DreamHub");
     }
 }
