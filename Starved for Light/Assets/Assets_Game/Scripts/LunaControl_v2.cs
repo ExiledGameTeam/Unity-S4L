@@ -239,23 +239,22 @@ public class LunaControl_v2 : MonoBehaviour
         }
         if (RB2D.velocity.x > MaxFlySpeed && facingRight && !LongJump)
         {
-            Debug.Log("derp");
+            Debug.Log("derp11");
             RB2D.velocity = new Vector2(MaxFlySpeed, RB2D.velocity.y);
         }
         if (RB2D.velocity.x < -MaxFlySpeed && !facingRight && !LongJump)
         {
-            Debug.Log("derp2");
+            Debug.Log("derp22");
             RB2D.velocity = new Vector2(-MaxFlySpeed, RB2D.velocity.y);
         }
         if (RB2D.velocity.x > MaxFlySpeed && facingRight && LongJump && !grounded)
         {
-            Debug.Log("derp");
             RB2D.AddForce(new Vector2(-(RB2D.velocity.x - MaxFlySpeed) * FlyBackForce, 0));
         }
-        if (RB2D.velocity.x < -MaxFlySpeed && !facingRight && LongJump && !grounded)
+        if (RB2D.velocity.x < -3.5f && !facingRight && LongJump && !grounded)
         {
             Debug.Log("derp2");
-            RB2D.AddForce(new Vector2(-(RB2D.velocity.x - MaxFlySpeed) * FlyBackForce, 0));
+            RB2D.AddForce(new Vector2((Mathf.Abs(RB2D.velocity.x) - 3.5f) * FlyBackForce, 0));
         }
 
     //##############################################
@@ -393,7 +392,7 @@ public class LunaControl_v2 : MonoBehaviour
             }
             if (!DoubleJumped && !grounded && canDoubleJump && InputManager.GetButtonDown("Jump"))
             {
-                RB2D.velocity = new Vector2(0, 0);
+                RB2D.velocity = new Vector2(RB2D.velocity.x, 0);
                 RB2D.AddForce(new Vector2(0, DoubleJumpForceBase));
             }
         }
@@ -429,7 +428,7 @@ public class LunaControl_v2 : MonoBehaviour
     {
         if (LongJump)
         {
-            RB2D.AddForce(new Vector2(0, jumpForce / 3 * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed))));
+            RB2D.AddForce(new Vector2(0, jumpForce * (Mathf.Lerp(_maxJumpForce, 0f, tJumpSpeed))));
         }
         if (!LongJump)
         {

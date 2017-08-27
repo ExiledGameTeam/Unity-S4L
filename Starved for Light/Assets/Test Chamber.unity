@@ -576,7 +576,7 @@ Camera:
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 0
-  orthographic size: 2.323857
+  orthographic size: 3.098476
   m_Depth: 0.11
   m_CullingMask:
     serializedVersion: 2
@@ -1127,7 +1127,7 @@ Camera:
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 0
-  orthographic size: 22.920233
+  orthographic size: 30.56031
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
@@ -1360,41 +1360,6 @@ Prefab:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
-        type: 2}
-      propertyPath: jumpForceBase
-      value: 240
-      objectReference: {fileID: 0}
-    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
-        type: 2}
-      propertyPath: DoubleJumpForceBase
-      value: 260
-      objectReference: {fileID: 0}
-    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
-        type: 2}
-      propertyPath: FlySpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
-        type: 2}
-      propertyPath: FlyBackForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
-        type: 2}
-      propertyPath: LongjumpForceBase
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
-        type: 2}
-      propertyPath: LongJumpForwardForce
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114859340101352070, guid: 6bc794bb5a1610d4fb94976e87f266e3,
-        type: 2}
-      propertyPath: MaxFlySpeed
-      value: 3.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6bc794bb5a1610d4fb94976e87f266e3, type: 2}
   m_IsPrefabParent: 0
@@ -1558,7 +1523,7 @@ Camera:
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 0
-  orthographic size: 2.323857
+  orthographic size: 3.098476
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -3030,7 +2995,7 @@ Camera:
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 0
-  orthographic size: 2.323857
+  orthographic size: 3.098476
   m_Depth: 0.09
   m_CullingMask:
     serializedVersion: 2
