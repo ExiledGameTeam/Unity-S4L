@@ -1,0 +1,104 @@
+
+iris-profile.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+iris-profile-back-leg-nr-flank
+  rotate: false
+  xy: 445, 77
+  size: 59, 86
+  orig: 59, 86
+  offset: 0, 0
+  index: -1
+iris-profile-back-leg-nr-hoof
+  rotate: true
+  xy: 127, 46
+  size: 46, 27
+  orig: 46, 27
+  offset: 0, 0
+  index: -1
+iris-profile-back-leg-nr-leg
+  rotate: false
+  xy: 452, 165
+  size: 51, 89
+  orig: 51, 89
+  offset: 0, 0
+  index: -1
+iris-profile-ear
+  rotate: false
+  xy: 233, 12
+  size: 47, 100
+  orig: 47, 100
+  offset: 0, 0
+  index: -1
+iris-profile-front-leg-nr-t1-hoof
+  rotate: true
+  xy: 367, 8
+  size: 47, 34
+  orig: 47, 34
+  offset: 0, 0
+  index: -1
+iris-profile-front-leg-nr-t1-leg
+  rotate: false
+  xy: 397, 61
+  size: 46, 109
+  orig: 46, 109
+  offset: 0, 0
+  index: -1
+iris-profile-hair-mane-fr
+  rotate: true
+  xy: 157, 2
+  size: 110, 74
+  orig: 110, 74
+  offset: 0, 0
+  index: -1
+iris-profile-hair-mane-nr
+  rotate: false
+  xy: 282, 8
+  size: 83, 47
+  orig: 83, 47
+  offset: 0, 0
+  index: -1
+iris-profile-hair-neck
+  rotate: false
+  xy: 2, 94
+  size: 153, 160
+  orig: 153, 160
+  offset: 0, 0
+  index: -1
+iris-profile-head-skull
+  rotate: false
+  xy: 282, 57
+  size: 113, 113
+  orig: 113, 113
+  offset: 0, 0
+  index: -1
+iris-profile-horn
+  rotate: false
+  xy: 403, 11
+  size: 47, 48
+  orig: 47, 48
+  offset: 0, 0
+  index: -1
+iris-profile-neck
+  rotate: true
+  xy: 282, 172
+  size: 82, 168
+  orig: 82, 168
+  offset: 0, 0
+  index: -1
+iris-profile-tail
+  rotate: false
+  xy: 157, 114
+  size: 123, 140
+  orig: 123, 140
+  offset: 0, 0
+  index: -1
+iris-profile-torso
+  rotate: false
+  xy: 2, 18
+  size: 123, 74
+  orig: 123, 74
+  offset: 0, 0
+  index: -1

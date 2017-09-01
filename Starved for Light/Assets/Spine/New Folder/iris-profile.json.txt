@@ -1,0 +1,140 @@
+{
+"skeleton": { "hash": "pNkaork6U6petoKne1k6KAec7U4", "spine": "3.6.38", "width": 296.68, "height": 324.34, "images": "./images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "ground", "parent": "root", "y": -8 },
+	{ "name": "bn_cog", "parent": "ground", "length": 30, "rotation": 90, "x": -21.62, "y": 135.17 },
+	{ "name": "bn_hip", "parent": "bn_cog", "length": 60.78, "rotation": 154.39, "x": 0.27, "y": 0.11 },
+	{ "name": "bn_knee", "parent": "bn_hip", "length": 62.19, "rotation": 15.12, "x": 60.98, "y": -0.41 },
+	{ "name": "bn_ankle", "parent": "bn_knee", "length": 14.98, "rotation": 7.02, "x": 62.19 },
+	{ "name": "bn_torso", "parent": "bn_cog", "length": 35.83, "rotation": -97.59, "x": 0.7, "y": -0.04 },
+	{ "name": "bn_chest", "parent": "bn_torso", "length": 33.33, "rotation": 19.9, "x": 35.83 },
+	{ "name": "bn_neck", "parent": "bn_chest", "length": 93.11, "rotation": 83.46, "x": 33.33 },
+	{ "name": "bn_head", "parent": "bn_neck", "length": 65.93, "rotation": -124.56, "x": 93.11 },
+	{ "name": "bn_ear", "parent": "bn_head", "length": 74.77, "rotation": 116.26, "x": -17, "y": 1.76 },
+	{ "name": "bone", "parent": "bn_chest", "length": 29.45, "rotation": -103.19, "x": 33.29, "y": -1 },
+	{ "name": "bn_shoulder", "parent": "bone", "length": 50.32, "rotation": 2.95, "x": 29.45 },
+	{ "name": "bn_elbow", "parent": "bn_shoulder", "length": 36.7, "rotation": -1.36, "x": 50.32 },
+	{ "name": "bn_pelvis", "parent": "bn_cog", "length": 27.29, "rotation": 49.74, "x": 0.73, "y": -0.04 },
+	{ "name": "bn_tail", "parent": "bn_pelvis", "length": 23.47, "rotation": 30.18, "x": 26.97, "y": 0.13 },
+	{ "name": "bn_wrist", "parent": "bn_elbow", "length": 16.31, "rotation": -0.71, "x": 36.7 }
+],
+"slots": [
+	{ "name": "iris-profile-tail", "bone": "bn_tail", "attachment": "iris-profile-tail" },
+	{ "name": "iris-profile-hair-neck", "bone": "bn_head", "attachment": "iris-profile-hair-neck" },
+	{ "name": "iris-profile-torso", "bone": "bn_torso", "attachment": "iris-profile-torso" },
+	{ "name": "iris-profile-neck", "bone": "bn_neck", "attachment": "iris-profile-neck" },
+	{ "name": "iris-profile-head-skull", "bone": "bn_head", "attachment": "iris-profile-head-skull" },
+	{ "name": "iris-profile-hair-mane-fr", "bone": "bn_head", "attachment": "iris-profile-hair-mane-fr" },
+	{ "name": "iris-profile-horn", "bone": "bn_head", "attachment": "iris-profile-horn" },
+	{ "name": "iris-profile-hair-mane-nr", "bone": "bn_head", "attachment": "iris-profile-hair-mane-nr" },
+	{ "name": "iris-profile-ear2", "bone": "bn_ear", "attachment": "iris-profile-ear" },
+	{ "name": "iris-profile-ear", "bone": "bn_head" },
+	{ "name": "iris-profile-back-leg-nr-flank", "bone": "bn_hip", "attachment": "iris-profile-back-leg-nr-flank" },
+	{ "name": "iris-profile-back-leg-nr-hoof", "bone": "bn_ankle", "attachment": "iris-profile-back-leg-nr-hoof" },
+	{ "name": "iris-profile-back-leg-nr-leg", "bone": "bn_knee", "attachment": "iris-profile-back-leg-nr-leg" },
+	{ "name": "iris-profile-front-leg-nr-t1-hoof", "bone": "bn_wrist", "attachment": "iris-profile-front-leg-nr-t1-hoof" },
+	{ "name": "iris-profile-front-leg-nr-t1-leg", "bone": "bn_elbow", "attachment": "iris-profile-front-leg-nr-t1-leg" }
+],
+"skins": {
+	"default": {
+		"iris-profile-back-leg-nr-flank": {
+			"iris-profile-back-leg-nr-flank": { "x": 12.93, "y": 6.45, "rotation": 115.61, "width": 59, "height": 86 }
+		},
+		"iris-profile-back-leg-nr-hoof": {
+			"iris-profile-back-leg-nr-hoof": { "x": 5.98, "y": 0.14, "rotation": 93.47, "width": 46, "height": 27 }
+		},
+		"iris-profile-back-leg-nr-leg": {
+			"iris-profile-back-leg-nr-leg": { "x": 29.13, "y": -2.79, "rotation": 100.49, "width": 51, "height": 89 }
+		},
+		"iris-profile-ear2": {
+			"iris-profile-ear": { "x": 33.01, "y": 3.42, "rotation": -89.01, "width": 47, "height": 100 }
+		},
+		"iris-profile-front-leg-nr-t1-hoof": {
+			"iris-profile-front-leg-nr-t1-hoof": { "x": 3.84, "y": 0.01, "rotation": 90, "width": 47, "height": 34 }
+		},
+		"iris-profile-front-leg-nr-t1-leg": {
+			"iris-profile-front-leg-nr-t1-leg": { "x": -7.96, "y": 1.06, "rotation": 89.29, "width": 46, "height": 109 }
+		},
+		"iris-profile-hair-mane-fr": {
+			"iris-profile-hair-mane-fr": { "x": 26.17, "y": 65.68, "rotation": 27.26, "width": 110, "height": 74 }
+		},
+		"iris-profile-hair-mane-nr": {
+			"iris-profile-hair-mane-nr": { "x": 19.03, "y": 45.7, "rotation": 27.26, "width": 83, "height": 47 }
+		},
+		"iris-profile-hair-neck": {
+			"iris-profile-hair-neck": { "x": 33.62, "y": -32.84, "rotation": 27.26, "width": 153, "height": 160 }
+		},
+		"iris-profile-head-skull": {
+			"iris-profile-head-skull": { "x": 27, "y": 14.93, "rotation": 27.26, "width": 113, "height": 113 }
+		},
+		"iris-profile-horn": {
+			"iris-profile-horn": { "x": 36.28, "y": 79.89, "rotation": 27.26, "width": 47, "height": 48 }
+		},
+		"iris-profile-neck": {
+			"iris-profile-neck": { "x": 51.53, "y": -5.1, "rotation": -97.31, "width": 82, "height": 168 }
+		},
+		"iris-profile-tail": {
+			"iris-profile-tail": { "x": 36.99, "y": 50.48, "rotation": -169.93, "width": 123, "height": 140 }
+		},
+		"iris-profile-torso": {
+			"iris-profile-torso": { "x": 36.15, "y": 1.92, "rotation": 7.59, "width": 123, "height": 74 }
+		}
+	}
+},
+"animations": {
+	"iris-idle": {
+		"bones": {
+			"bn_head": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.5,
+						"angle": 5.04,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1, "angle": 0 }
+				]
+			},
+			"bn_neck": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.5,
+						"x": 1.02,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1, "x": 1, "y": 1 }
+				]
+			},
+			"ground": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.541, 0, 0.455, 1 ]
+					},
+					{
+						"time": 0.5,
+						"x": 1,
+						"y": 1.01,
+						"curve": [ 0.504, 0, 0.496, 1.01 ]
+					},
+					{ "time": 1, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}
