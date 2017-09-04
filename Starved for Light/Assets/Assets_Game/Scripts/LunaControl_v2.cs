@@ -32,6 +32,8 @@ public class LunaControl_v2 : MonoBehaviour
     public bool LongJump = false;
     public bool JustJumped = false;
 
+    public bool LowEdge = false;
+
     public float _timeHeld = 0.0f;
     public float timeForFullJump = 10f;
     public float timeForFullDoubleJump = 0f;
@@ -39,10 +41,13 @@ public class LunaControl_v2 : MonoBehaviour
     public float _leftJumpForce = 1.0f;
 
     private Rigidbody2D RB2D;
-    private BoxCollider2D GroundTrigger;
     public float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
     public Transform groundcheck;
+    public float edgeCheckRadius = 0.1f;
+    public LayerMask Edge_Climb_Layer;
+    public Transform Edge_Check;
+
 
     public float jumpForce = 46f;
     public float jumpForceBase = 0f;
@@ -52,6 +57,7 @@ public class LunaControl_v2 : MonoBehaviour
     public float DoubleJumpForceBase = 0f;
     public float FlySpeed = 0f;
     public float MaxFlySpeed = 0f;
+    public float LowEdgeJumpForce = 0f;
 
     public float HoverForce = 0f;
     public float IrisSpeedX = 0f;
@@ -251,10 +257,10 @@ public class LunaControl_v2 : MonoBehaviour
         {
             RB2D.AddForce(new Vector2(-(RB2D.velocity.x - MaxFlySpeed) * FlyBackForce, 0));
         }
-        if (RB2D.velocity.x < -3.5f && !facingRight && LongJump && !grounded)
+        if (RB2D.velocity.x < -MaxFlySpeed && !facingRight && LongJump && !grounded)
         {
             Debug.Log("derp2");
-            RB2D.AddForce(new Vector2((Mathf.Abs(RB2D.velocity.x) - 3.5f) * FlyBackForce, 0));
+            RB2D.AddForce(new Vector2((Mathf.Abs(RB2D.velocity.x) - MaxFlySpeed) * FlyBackForce, 0));
         }
 
     //##############################################
@@ -272,6 +278,13 @@ public class LunaControl_v2 : MonoBehaviour
         else
         {
             tHoverSpeed = 0f;
+        }
+    //##############################################
+    //#                  EDGE CLIMB                #
+    //##############################################
+    if (LowEdge)
+        {
+            LowEdgePush();
         }
     }
     //########################################################################################################################################
@@ -292,6 +305,7 @@ public class LunaControl_v2 : MonoBehaviour
             LongJump = false;
         }
         grounded = Physics2D.OverlapCircle(groundcheck.position, groundCheckRadius, groundLayer);
+        LowEdge = Physics2D.OverlapCircle(Edge_Check.position, groundCheckRadius, Edge_Climb_Layer);
         if (!LongJump)
         {
             if (InputManager.GetButtonUp("Jump"))
@@ -423,6 +437,10 @@ public class LunaControl_v2 : MonoBehaviour
     {
         yield return new WaitForSeconds(jumpDelay);
         readyToJump = true;
+    }
+    public void LowEdgePush()
+    {
+        RB2D.AddForce(new Vector2(0, LowEdgeJumpForce));
     }
     public void Jump()
     {
