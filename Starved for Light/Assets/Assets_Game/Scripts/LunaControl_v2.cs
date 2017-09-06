@@ -18,7 +18,7 @@ public class LunaControl_v2 : MonoBehaviour
     public float GalopAccelerate = 0f;
     public float jumpforceReference;
 
-    bool facingRight = true;
+    public bool facingRight = true;
     private bool troting = false;
     private bool sneaking = false;
     private bool jumping = false;
