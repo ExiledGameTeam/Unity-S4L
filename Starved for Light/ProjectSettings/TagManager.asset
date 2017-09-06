@@ -11,6 +11,7 @@ TagManager:
   - New tag
   - onlyTrigger
   - Ground
+  - Edge
   layers:
   - Default
   - TransparentFX
