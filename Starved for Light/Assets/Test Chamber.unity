@@ -911,7 +911,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &164032170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1247,9 +1247,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 68.7651
+  field of view: 75.17818
   orthographic: 0
-  orthographic size: 2.754201
+  orthographic size: 3.098476
   m_Depth: 0.11
   m_CullingMask:
     serializedVersion: 2
@@ -2977,9 +2977,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 68.7651
+  field of view: 75.17818
   orthographic: 0
-  orthographic size: 27.16472
+  orthographic size: 30.56031
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
@@ -4819,9 +4819,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 68.7651
+  field of view: 75.17818
   orthographic: 0
-  orthographic size: 2.754201
+  orthographic size: 3.098476
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -5177,14 +5177,6 @@ Prefab:
     - target: {fileID: 1936265693235922, guid: a55a96d0bafcd0e4a94772b810a3981f, type: 2}
       propertyPath: m_Name
       value: Edge (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4473716762000242, guid: a55a96d0bafcd0e4a94772b810a3981f, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.034059998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4473716762000242, guid: a55a96d0bafcd0e4a94772b810a3981f, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 7.92329
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a55a96d0bafcd0e4a94772b810a3981f, type: 2}
@@ -9037,14 +9029,6 @@ Prefab:
       propertyPath: m_Name
       value: Edge (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 4473716762000242, guid: a55a96d0bafcd0e4a94772b810a3981f, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.034059998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4473716762000242, guid: a55a96d0bafcd0e4a94772b810a3981f, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 7.92329
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a55a96d0bafcd0e4a94772b810a3981f, type: 2}
   m_IsPrefabParent: 0
@@ -9473,9 +9457,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 68.7651
+  field of view: 75.17818
   orthographic: 0
-  orthographic size: 2.754201
+  orthographic size: 3.098476
   m_Depth: 0.09
   m_CullingMask:
     serializedVersion: 2
@@ -12757,7 +12741,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00017778052, y: -0.00014762906}
+  m_Offset: {x: -0.00007045083, y: -0.00089379004}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -12768,7 +12752,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0067154523, y: 0.005607958}
+  m_Size: {x: 0.014174128, y: 0.015055412}
   m_EdgeRadius: 0
 --- !u!1 &1789570871
 GameObject:
@@ -13452,14 +13436,6 @@ Prefab:
     - target: {fileID: 1936265693235922, guid: a55a96d0bafcd0e4a94772b810a3981f, type: 2}
       propertyPath: m_Name
       value: Edge (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4473716762000242, guid: a55a96d0bafcd0e4a94772b810a3981f, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.034059998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4473716762000242, guid: a55a96d0bafcd0e4a94772b810a3981f, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 7.92329
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a55a96d0bafcd0e4a94772b810a3981f, type: 2}

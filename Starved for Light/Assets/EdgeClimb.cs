@@ -9,11 +9,10 @@ public class EdgeClimb : MonoBehaviour {
     public GameObject Iris;
     public GameObject IrisBody;
 
-
     // Use this for initialization
     void Start () {
         Iris = GameObject.Find("Luna_Character");
-        IrisBody = GameObject.Find("Body collision");
+        IrisBody = GameObject.Find("Edge_Low Check");
 
         IrisControler = Iris.GetComponent<LunaControl_v2>();
         LowEdge = IrisBody.GetComponent<Collider2D>();
@@ -26,11 +25,15 @@ public class EdgeClimb : MonoBehaviour {
 	}
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other == LowEdge)
+        if (other == LowEdge & IrisControler.facingRight)
         {
             RB2D.velocity = new Vector2(0,0);
-            Debug.Log("entered");
             RB2D.AddForce(new Vector2(200f, IrisControler.LowEdgeJumpForce));
+        }
+        if (other == LowEdge & !IrisControler.facingRight)
+        {
+            RB2D.velocity = new Vector2(0, 0);
+            RB2D.AddForce(new Vector2(-200f, IrisControler.LowEdgeJumpForce));
         }
     }
 }
