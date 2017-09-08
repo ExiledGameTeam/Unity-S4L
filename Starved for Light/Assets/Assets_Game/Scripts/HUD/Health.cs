@@ -1,45 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Health : MonoBehaviour {
+public class Health : Statistic {
 
-	public float health = 100f;
-	public float maxHealth = 100f;
-	public float waitTime = 5f;
+	public float waitForRegenerationTime = 1f;
 	public float regenerationTime = 1000f;
 
-	public float lastTimeHit;
+	private float lastTimeHit = 0;
 
-	// Use this for initialization
-	void Start () {
-		
+	void Awake(){
+		image = GameObject.Find("PlayerHealthSlider").GetComponent<Image>();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		lastTimeHit += Time.deltaTime;
-		if(lastTimeHit > waitTime){
-			health += 1.0f/regenerationTime * maxHealth;
-			NormalizeHealth();
+		if(!isMax() && lastTimeHit > waitForRegenerationTime){
+			actualValue += 1.0f/regenerationTime * maxValue;
+			Normalize();
 		}
+		image.fillAmount = actualValue / 100;
 	}
 
-	public void GetHit(float damage){
+	public void DealDamage(float damage){
 		lastTimeHit = 0f;
-		health -= damage;
-		NormalizeHealth();
+		DecreaseActualValueBy(damage);
+		Normalize();
 	}
 
-	private void NormalizeHealth(){
-		if(health < 0){
-			health = 0;
-		} else if (health > maxHealth) {
-			health = maxHealth;
-		}
-	}
-
-	public void OnMouseDown(){
-		GetHit(90);
-	}
+//	public void OnMouseDown(){
+//		DealDamage(90);
+//	}
 }
