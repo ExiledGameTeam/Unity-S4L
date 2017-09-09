@@ -49,16 +49,17 @@
 			maxCameraLenght = 1 / (new Vector2 (Screen.width, Screen.height)).magnitude;
 
 			if(PrimaryFlare == null)
-				PrimaryFlare = Resources2DDL.getTexture2D(1);
+				//PrimaryFlare = Resources2DDL.getTexture2D(1);
 
 			if(FirstHalo == null)
-				FirstHalo = Resources2DDL.getTexture2D(2);
+				//FirstHalo = Resources2DDL.getTexture2D(2);
 
 			if(SmallBurst == null)
-				SmallBurst = Resources2DDL.getTexture2D(3);
+				//SmallBurst = Resources2DDL.getTexture2D(3);
 
 			if (NextHalo == null)
-				NextHalo = Resources2DDL.getTexture2D (4);
+				NextHalo = null;
+				//NextHalo = Resources2DDL.getTexture2D (4);
 
 
 
