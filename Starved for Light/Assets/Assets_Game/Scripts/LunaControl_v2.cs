@@ -42,10 +42,6 @@ public class LunaControl_v2 : MonoBehaviour
     public float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
     public Transform groundcheck;
-    public float edgeCheckRadius = 0.1f;
-    public LayerMask Edge_Climb_Layer;
-    public Transform Edge_Check;
-
 
     public float jumpForce = 46f;
     public float jumpForceBase = 0f;
