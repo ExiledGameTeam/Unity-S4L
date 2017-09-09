@@ -50,7 +50,7 @@ public abstract class Statistic : MonoBehaviour {
 		actualValue += 1.0f/1000.0f * maxValue;
 		Normalize();
 		if(image != null){
-			image.fillAmount = actualValue / 100;	
+			image.fillAmount = actualValue / maxValue;	
 		}
 	}
 

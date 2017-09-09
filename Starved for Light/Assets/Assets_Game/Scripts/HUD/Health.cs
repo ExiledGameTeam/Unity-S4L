@@ -20,7 +20,9 @@ public class Health : Statistic {
 			actualValue += 1.0f/regenerationTime * maxValue;
 			Normalize();
 		}
-		image.fillAmount = actualValue / 100;
+		if(image != null){
+			image.fillAmount = actualValue / maxValue;	
+		}
 	}
 
 	public void DealDamage(float damage){
@@ -29,7 +31,7 @@ public class Health : Statistic {
 		Normalize();
 	}
 
-//	public void OnMouseDown(){
-//		DealDamage(90);
-//	}
+	public void OnMouseDown(){
+		DealDamage(90);
+	}
 }
