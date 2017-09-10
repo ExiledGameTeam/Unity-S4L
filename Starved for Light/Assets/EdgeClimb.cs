@@ -10,8 +10,9 @@ public class EdgeClimb : MonoBehaviour {
     public GameObject Iris;
     public GameObject IrisBody;
     public GameObject IrisBodyHigh;
-	public GameObject TargetObject;
-    public Transform target;
+    public GameObject target;
+
+    public bool grabbed = false;
 
     public float GrabSpeed = 0f;
 
@@ -20,20 +21,15 @@ public class EdgeClimb : MonoBehaviour {
         Iris = GameObject.Find("Luna_Character");
         IrisBody = GameObject.Find("Edge_low Check");
         IrisBodyHigh = GameObject.Find("Edge_High Check");
-		TargetObject = GameObject.Find ("PointToGrab");
 
         IrisControler = Iris.GetComponent<LunaControl_v2>();
         LowEdge = IrisBody.GetComponent<Collider2D>();
         HighEdge = IrisBodyHigh.GetComponent<Collider2D>();
         RB2D = Iris.GetComponent<Rigidbody2D>();
-
-        target = TargetObject.GetComponent<Transform>();
     }
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other == LowEdge & IrisControler.facingRight)
@@ -49,9 +45,19 @@ public class EdgeClimb : MonoBehaviour {
 
         if (other == HighEdge)
         {
+            grabbed = true;
             RB2D.gravityScale = 0f;
-            float step = GrabSpeed * Time.deltaTime;
-
+            RB2D.velocity = new Vector2(0, 0);
         }
     }
+    void Update()
+    {
+        if (grabbed)
+        {
+            float step = GrabSpeed * Time.deltaTime;
+            Debug.Log("grabbing");
+            Iris.transform.position = Vector3.MoveTowards(Iris.transform.position, target.transform.position, step);
+        }
+    }
+
 }
