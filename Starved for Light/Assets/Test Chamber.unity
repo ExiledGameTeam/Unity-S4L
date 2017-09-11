@@ -12375,14 +12375,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 33259177710408118, guid: a55a96d0bafcd0e4a94772b810a3981f,
+    - target: {fileID: 23284473356969518, guid: a55a96d0bafcd0e4a94772b810a3981f,
         type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 33135988820889050, guid: a55a96d0bafcd0e4a94772b810a3981f,
-        type: 2}
-      propertyPath: m_Mesh
+      propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 23850465008654176, guid: a55a96d0bafcd0e4a94772b810a3981f,
@@ -12390,19 +12385,19 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 23284473356969518, guid: a55a96d0bafcd0e4a94772b810a3981f,
+    - target: {fileID: 33135988820889050, guid: a55a96d0bafcd0e4a94772b810a3981f,
         type: 2}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33259177710408118, guid: a55a96d0bafcd0e4a94772b810a3981f,
+        type: 2}
+      propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1936265693235922, guid: a55a96d0bafcd0e4a94772b810a3981f, type: 2}
       propertyPath: m_Name
-      value: Edge (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114795433314918458, guid: a55a96d0bafcd0e4a94772b810a3981f,
-        type: 2}
-      propertyPath: GrabSpeed
-      value: 4
+      value: Edge
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a55a96d0bafcd0e4a94772b810a3981f, type: 2}
