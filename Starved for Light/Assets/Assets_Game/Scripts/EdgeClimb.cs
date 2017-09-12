@@ -10,7 +10,8 @@ public class EdgeClimb : MonoBehaviour {
     public GameObject Iris;
     public GameObject IrisBody;
     public GameObject IrisBodyHigh;
-    public GameObject target;
+    public GameObject targetLeft;
+    public GameObject targetRight;
 
     public bool grabbed = false;
 
@@ -54,9 +55,19 @@ public class EdgeClimb : MonoBehaviour {
     {
         if (grabbed)
         {
-            float step = GrabSpeed * Time.deltaTime;
-            Debug.Log("grabbing");
-            Iris.transform.position = Vector3.MoveTowards(Iris.transform.position, target.transform.position, step);
+            if (IrisControler.facingRight)
+            {
+                float step = GrabSpeed * Time.deltaTime;
+                Debug.Log("grabbing");
+                Iris.transform.position = Vector3.MoveTowards(Iris.transform.position, targetLeft.transform.position, step);
+            }
+            if (!IrisControler.facingRight)
+            {
+                float step = GrabSpeed * Time.deltaTime;
+                Debug.Log("grabbing");
+                Iris.transform.position = Vector3.MoveTowards(Iris.transform.position, targetRight.transform.position, step);
+            }
+
         }
     }
 
