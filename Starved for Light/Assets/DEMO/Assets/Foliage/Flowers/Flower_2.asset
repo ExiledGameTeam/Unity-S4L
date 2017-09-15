@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: Flower_2
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 636410882695798350
+  _documentAsset: {fileID: 114129829810492698}
+  _sharedMesh: {fileID: 43343222440073128}
+  _antialiasing: 0
+  _generateCollider: 0
+  _keepSVGFile: 0
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 1
+  _useGradients: 1
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.008
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients: []
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.61592
+    height: 1.02872
+  _useLayers: 0
+  _layers: []
+--- !u!43 &43343222440073128
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Flower_2
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 279
+    topology: 0
+    firstVertex: 0
+    vertexCount: 95
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.30800003, y: 0.51444006, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 00000100020000000300010004000300000004000500030006000500040006000700050006000800070009000800060009000a0008000a0009000b000c000d000e000f000d000c000f0010000d000f0011001000120011000f0013001100120013001400110015001400130016001400150016001700140018001700160018001900170018001a00190018001b001a001b0018001c001d001e001f0020001e001d00200021001e002000220021002300220020002300240022002300250024002300260025001b00260023001b00270026001c0027001b00280027001c000a00270028000a00290027000b0029000a000b002a0029000b002b002a000b002c002b002d002c000b002d002e002c002d002f002e0030002f002d00300031002f003000320031003300320030003300340032003500340033003500360034003700360035003700380036003700390038003a00390037003b0039003a003b003c0039003d003c003b003e003c003d003e003f003c0040003f003e0041003f004000410042003f0041004300420041004400430045004400410045004600440047004600450047004800460047004900480047004a0049004a0047004b004c004d004e004c004f004d0050004f004c00500051004f00290051005000510029002a004400520043004400530052005400530044005400550053005400560055005400570056005800570054005700580059005a00480049005a005b0048005c005b005a005c005d005b005d005c005e00
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 95
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1520
+    _typelessdata: 508e49bd00bd293c00000000000000ffa01f70bcf832433d00000000000000ffc85100bdd00be93c00000000000000ff00f0403a140d8b3d00000000000000fff08c36bd80b9c13c00000000000000ffc07b723cc873b63d00000000000000ffa8b82abd2839193d00000000000000fff00ce13c1cb0e43d00000000000000fff8441e3dd8450a3e00000000000000ffa0c126bd58806f3d00000000000000fff08e453dfae7223e00000000000000ff20602dbda45f943d00000000000000ff58f2783e96b3f7be00000000000000ff445b8e3e7639e5be00000000000000ff50af943e58b203bf00000000000000ff90ad673e5a80b6be00000000000000ff94847d3e2eb29dbe00000000000000ff68b36a3ec0e270be00000000000000ff4c874e3e7ce36bbe00000000000000ffd89a2d3e5812d9bd00000000000000ff28c0303e10a636bd00000000000000ffc009053ee0b5843c00000000000000ff8c5ddb3d14d89c3d00000000000000ff349dd63dd4c6113e00000000000000ff5808ab3dcc41093e00000000000000ff084ce03de2fb1b3e00000000000000ffaceae53d7ce9263e00000000000000ffe8d9e53df6ab393e00000000000000ff7c8b873d1238123e00000000000000ff8a6a8a3ec87b0e3e00000000000000ff44ca8f3e9c5b213e00000000000000ffc049933e72a3013e00000000000000ff1ada803e5c28193e00000000000000ff7cd88b3efe8a353e00000000000000ff3cae863ef898483e00000000000000fffcfd623e3ac8243e00000000000000ff84a2793e0067623e00000000000000ffacf6693e805e713e00000000000000ff3c484f3e21f3813e00000000000000ffeec63b3e30ad863e00000000000000ff208f603d06931b3e00000000000000ff84b61c3e4a688b3e00000000000000ff2eb29d3ef440e43e00000000000000ff68ba973e604dde3e00000000000000ff3a0d913e762ad93e00000000000000ff30794abd64ecbd3d00000000000000ff70f0853e642cd33e00000000000000ff0cfb763ed801d03e00000000000000ff3c6d8dbde4c5fb3d00000000000000ff78ed523e63dfce3e00000000000000fff8b4433ed113cf3e00000000000000ff74779dbdd6290f3e00000000000000fff4962b3e46c4cd3e00000000000000ffa07aa4bd64d5203e00000000000000ff0cbdfe3d80c6c53e00000000000000ff7c1b9bbdc05c443e00000000000000ff10aeb93d8abbba3e00000000000000ff7446943d8e0fb33e00000000000000fff40181bdc4cd623e00000000000000ff18a158bdb240743e00000000000000ff0875913d6fc5be3e00000000000000ff1844a4bdf61e673e00000000000000fffc58c1bd7eda613e00000000000000ff30f4883d5250ca3e00000000000000ff04b001be9098593e00000000000000ff2ca226bee47d553e00000000000000fff8fd543dbb70e03e00000000000000ff08f74a3dd872e73e00000000000000ff86949fbd1a56b13e00000000000000ff56e064bed01f533e00000000000000ffda45d1bd568cb33e00000000000000ffc42888be5e5d4e3e00000000000000ff7aad04bef4ecb23e00000000000000ff70f085becccd703e00000000000000ff443991be06905a3e00000000000000ff2eb29dbe5206473e00000000000000ff90e55d3ef4b0903e00000000000000ff046d723ec543983e00000000000000ff18bc683ed0f7933e00000000000000ff20d4853e2260ad3e00000000000000ff7a73383eae708b3e00000000000000fff8ee8f3e587cc33e00000000000000ff60e75f3d0cdcfa3e00000000000000ff9005853d58b2033f00000000000000ff287497bd67e0c03e00000000000000ff40472b3d1ed1fd3e00000000000000ff80ab123cd490f13e00000000000000ff200ed9bcf784e53e00000000000000ff70356bbd5e1fd63e00000000000000ffa00043bd0aacdc3e00000000000000ff281c7abea0ad833e00000000000000ffc4ef26be2ab7ad3e00000000000000ffd25966be7546943e00000000000000ff52534bbe306ba23e00000000000000ff0c9d57bec2e69c3e00000000000000ff
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.30800003, y: 0.51444006, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &114129829810492698
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 
