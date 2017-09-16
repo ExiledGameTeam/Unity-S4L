@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: BluszczB_4
   m_EditorClassIdentifier: 
-  _lastTimeModified: 636394452073409837
+  _lastTimeModified: 636411734154457538
   _documentAsset: {fileID: 114869122787057336}
-  _sharedMesh: {fileID: 43627238504447222}
+  _sharedMesh: {fileID: 43524073612371956}
   _antialiasing: 0
   _generateCollider: 0
   _keepSVGFile: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
     height: 12.5848
   _useLayers: 0
   _layers: []
---- !u!43 &43627238504447222
+--- !u!43 &43524073612371956
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
