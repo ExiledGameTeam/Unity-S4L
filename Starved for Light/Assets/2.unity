@@ -150,10 +150,8 @@ GameObject:
   - component: {fileID: 4203868}
   - component: {fileID: 4203867}
   - component: {fileID: 4203872}
-  - component: {fileID: 4203874}
   - component: {fileID: 4203873}
   - component: {fileID: 4203875}
-  - component: {fileID: 4203876}
   - component: {fileID: 4203877}
   m_Layer: 0
   m_Name: Main Camera
@@ -266,18 +264,6 @@ MonoBehaviour:
   _horizontalFOV: 91.49284
   _verticalSize: 2.323857
   _horizontalSize: 4.1313014
---- !u!114 &4203874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 4203866}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 301eca71255100647bb9bad1d5641921, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shader: {fileID: 4800000, guid: dc589b04ff34d6c4f9387d6d703a7bbe, type: 3}
 --- !u!114 &4203875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,17 +278,6 @@ MonoBehaviour:
   iterations: 1
   blurSpread: 0.566
   blurShader: {fileID: 4800000, guid: 57e6deea7c2924e22a5138e2b70bb4dc, type: 3}
---- !u!114 &4203876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 4203866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d9b6871d3cdbba478825c4b041a7f90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4203877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30157,7 +30132,7 @@ MonoBehaviour:
       type: 0
       axis: 0
       joystick: 0
-    - name: Sprint
+    - name: Sprint2
       description: Button A
       positive: 350
       negative: 0
