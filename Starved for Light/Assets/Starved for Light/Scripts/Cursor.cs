@@ -2,18 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Kursor : MonoBehaviour {
+namespace S4L {
+    public class Cursor : MonoBehaviour {
 
-    public Texture2D cursorTexture;
-    private Vector2 hotSpot = Vector2.zero;
+        public Texture2D cursorTexture;
 
-	// Use this for initialization
-	void Start () {
-        Cursor.SetCursor(cursorTexture, hotSpot, CursorMode.ForceSoftware);
+        void Start() {
+            UnityEngine.Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.ForceSoftware);
+        }
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
+
+
