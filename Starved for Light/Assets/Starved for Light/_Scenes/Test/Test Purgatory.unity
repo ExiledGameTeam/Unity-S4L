@@ -293,7 +293,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 470942937}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31406bd502c60be429b66c1b0b4e3ccd, type: 3}
+  m_Script: {fileID: 11500000, guid: ead1c29ce987b984284152aaa168882f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   actualValue: 100
@@ -729,13 +729,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1531100190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc27429184873844880bc952fee3428e, type: 3}
+  m_Script: {fileID: 11500000, guid: ca0c930e0d56483418a286abeb73e226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   actualValue: 100
   maxValue: 100
   image: {fileID: 0}
-  waitForRegenerationTime: 5
+  waitForRegenerationTime: 1
   regenerationTime: 1000
 --- !u!58 &1531100192
 CircleCollider2D:
@@ -854,7 +854,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1731838546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22cb5c442df9028449041642fa9d4515, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a27d25538c70af4ba42f879ccd6ea04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   actualValue: 100

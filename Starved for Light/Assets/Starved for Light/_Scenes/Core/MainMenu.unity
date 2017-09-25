@@ -559,10 +559,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 73405739}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37a6c42ab3c6f894fa778134c8fea920, type: 3}
+  m_Script: {fileID: 11500000, guid: 9568599f42e96fd47a3628039599d20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dampTime: 0.8
+  dampTime: 0.6
   target: {fileID: 1919427277}
 --- !u!81 &73405746
 AudioListener:
@@ -3745,9 +3745,9 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 929084348}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b34096e2e03452c408c6f5d660bef42f, type: 3}
+  m_Script: {fileID: 11500000, guid: 99da13bd5e407354d84a5d0516fed138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: 0
@@ -3814,7 +3814,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 945078283}
-  - component: {fileID: 945078282}
   - component: {fileID: 945078284}
   m_Layer: 0
   m_Name: Cursor
@@ -3823,17 +3822,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &945078282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 945078281}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a1a56e44fc314a4db52fc49b9305b73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &945078283
 Transform:
   m_ObjectHideFlags: 0
@@ -3855,7 +3843,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 945078281}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82987216ca3ffa643b3493c006fc3d79, type: 3}
+  m_Script: {fileID: 11500000, guid: ad5670118c75c574fa367a35b6175f9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: 1d6624b48d5c3524f849d84e9a95953f, type: 3}
@@ -18043,10 +18031,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1972919878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37a6c42ab3c6f894fa778134c8fea920, type: 3}
+  m_Script: {fileID: 11500000, guid: 9568599f42e96fd47a3628039599d20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dampTime: 0.8
+  dampTime: 0.6
   target: {fileID: 1919427277}
 --- !u!81 &1972919882
 AudioListener:
@@ -18229,10 +18217,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1976487522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37a6c42ab3c6f894fa778134c8fea920, type: 3}
+  m_Script: {fileID: 11500000, guid: 9568599f42e96fd47a3628039599d20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dampTime: 0.8
+  dampTime: 0.6
   target: {fileID: 1919427277}
 --- !u!124 &1976487529
 Behaviour:
