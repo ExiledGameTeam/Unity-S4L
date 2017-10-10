@@ -120,6 +120,9 @@ GameObject:
   - component: {fileID: 747829218}
   - component: {fileID: 747829217}
   - component: {fileID: 747829216}
+  - component: {fileID: 747829222}
+  - component: {fileID: 747829221}
+  - component: {fileID: 747829223}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -166,7 +169,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 1
   orthographic size: 5
   m_Depth: -1
@@ -197,6 +200,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &747829221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747829215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ebdb9c5e3d6f044782bf2a7b1a6cdcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ct: 0
+  _adjustMode: 0
+  _mainAreaWidth: 1.0709343
+  _mainAreaHeight: 1
+  _verticalFOV: 60.000004
+  _horizontalFOV: 63.457355
+  _verticalSize: 5
+  _horizontalSize: 5.3546715
+--- !u!114 &747829222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747829215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9568599f42e96fd47a3628039599d20e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dampTime: 0.15
+--- !u!114 &747829223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747829215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 125379868ec8fd44fbd126d85c8e8b10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1199180168
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +253,6 @@ GameObject:
   - component: {fileID: 1199180169}
   - component: {fileID: 1199180172}
   - component: {fileID: 1199180171}
-  - component: {fileID: 1199180173}
   m_Layer: 0
   m_Name: Input Manager
   m_TagString: Untagged
@@ -351,6 +395,20 @@ MonoBehaviour:
       deadZone: 0
       gravity: 0
       sensitivity: 0
+      snap: 0
+      invert: 0
+      type: 0
+      axis: 0
+      joystick: 0
+    - name: Gallop
+      description: 
+      positive: 304
+      negative: 0
+      altPositive: 303
+      altNegative: 0
+      deadZone: 0
+      gravity: 1
+      sensitivity: 1
       snap: 0
       invert: 0
       type: 0
@@ -966,14 +1024,3 @@ MonoBehaviour:
   rightTriggerAxis: RightTrigger
   dpadHorizontalAxis: DPADHorizontal
   dpadVerticalAxis: DPADVertical
---- !u!114 &1199180173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1199180168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07d27b23227762843909081301fd5dd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -12,6 +12,11 @@ namespace S4L {
         /// </summary>
         public static Action<List<Tuple<PlayerAxisInput, float>>, 
             List<Tuple<PlayerButtonInput, ButtonEvent>>> OnPlayerInput = null;
+        /// <summary>
+        /// When triggered, the camera will focus on inputted transform. 
+        /// Will return to last followed transform if sent value is null;
+        /// </summary>
+        public static Action<Transform> OnCameraTargetChanged = null;
 
         public static void Trigger(
             Action action

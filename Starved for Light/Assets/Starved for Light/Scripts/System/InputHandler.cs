@@ -23,7 +23,8 @@ namespace S4L {
             (new List<Tuple<PlayerButtonInput, string>> {
                 new Tuple<PlayerButtonInput, string>(PlayerButtonInput.Jump, "Jump"),
                 new Tuple<PlayerButtonInput, string>(PlayerButtonInput.Submit, "Submit"),
-                new Tuple<PlayerButtonInput, string>(PlayerButtonInput.Cancel, "Cancel")
+                new Tuple<PlayerButtonInput, string>(PlayerButtonInput.Cancel, "Cancel"),
+                new Tuple<PlayerButtonInput, string>(PlayerButtonInput.Gallop, "Gallop")
         });
         #endregion
 

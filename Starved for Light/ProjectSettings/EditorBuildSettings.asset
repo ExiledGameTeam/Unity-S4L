@@ -32,3 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Starved for Light/Misc/DEMO/DEMO.unity
     guid: 00c49335dd7a26a4bb503c14450a7012
+  - enabled: 1
+    path: Assets/Starved for Light/_Scenes/Core/CoreAssets.unity
+    guid: 0b471a47cfc1bdf43914dd95434a1691
