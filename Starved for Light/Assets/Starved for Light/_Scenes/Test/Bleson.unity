@@ -462,7 +462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1350884080}
   - component: {fileID: 1350884081}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1021,6 +1021,8 @@ GameObject:
   - component: {fileID: 1675504204}
   - component: {fileID: 1675504207}
   - component: {fileID: 1675504206}
+  - component: {fileID: 1675504208}
+  - component: {fileID: 1675504209}
   m_Layer: 0
   m_Name: Playable Character
   m_TagString: Untagged
@@ -1109,5 +1111,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99e5fd131620dac4da8a87e3a57b628b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asd: 0
+  useMovePosition: 0
   maxWalkSpeed: 70
+--- !u!114 &1675504208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1675504202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ef30187a0ed944480554a3b6b28eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angleGoal: 0
+  angle: 0
+  smooth: 0.3
+  goal: {x: 0, y: 0, z: 0, w: 0}
+  Follow: {fileID: 1675504202}
+--- !u!114 &1675504209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1675504202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ab4ebf0130647408fd180825a26497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDistance: 5

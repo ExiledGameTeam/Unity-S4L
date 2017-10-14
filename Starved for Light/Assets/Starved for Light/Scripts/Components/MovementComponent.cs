@@ -6,28 +6,27 @@ namespace S4L {
     [RequireComponent(typeof(Rigidbody2D))]
     public class MovementComponent : MonoBehaviour {
 
-        private Rigidbody2D rb;
-        private Transform t;
-
-        public bool asd;
+        public bool useMovePosition;
         public float maxWalkSpeed = 1f;
 
-        private void Awake() {
-            rb = GetComponent<Rigidbody2D>();
-            t = GetComponent<Transform>();
-        }
-
-        public void MoveHorizontal(float direction) {
-            if (asd) {
-                rb.MovePosition((Vector2)t.position +
-                    Time.deltaTime * new Vector2(
-                    direction * maxWalkSpeed, 0f) +
-                    rb.velocity +
-                    rb.gravityScale * Physics2D.gravity * Time.deltaTime
+        public void MoveHorizontal(Rigidbody2D rb, Transform t, float direction) {
+            if (useMovePosition) {
+                rb.MovePosition(t.position +
+                    Quaternion.Euler(0, 0, t.rotation.z) * (Time.deltaTime * new Vector2(
+                    direction * maxWalkSpeed, 0f)) +
+                    (Vector3)rb.velocity +
+                    rb.gravityScale * (Vector3)Physics2D.gravity * Time.deltaTime
                 );
+                
             } else {
-                rb.AddForce(new Vector2(1000f * Time.deltaTime * direction, 0f));
+                rb.AddForce(Quaternion.Euler(0, 0, t.rotation.z) * 
+                    new Vector2(1000f * Time.deltaTime * direction, 0f));
                 rb.velocity = Vector2.ClampMagnitude(rb.velocity, maxWalkSpeed);
+                Debug.DrawLine(transform.position, t.position +
+                    (Quaternion.Euler(0, 0, t.rotation.z) * new Vector3(
+                    direction * maxWalkSpeed, 0f) +
+                    (Vector3)rb.velocity +
+                    rb.gravityScale * (Vector3)Physics2D.gravity) * 10f, Color.magenta);
             }
         }
     }
