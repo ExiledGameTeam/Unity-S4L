@@ -2,14 +2,6 @@
 // This code can only be used under the standard Unity Asset Store End User License Agreement
 // A Copy of the EULA APPENDIX 1 is available at http://unity3d.com/company/legal/as_terms
 
-// HACKHACK: Disabled warnings
-#pragma warning disable 618
-// HACKHCK: Disabled warning
-// warning CS0649: Field `SVGImporter.Rendering.SVGHandles.worldTransformPosition' 
-// is never assigned to, and will always have its default value
-#pragma warning disable 649
-
-
 using UnityEngine;
 using UnityEditor;
 using System.Collections;

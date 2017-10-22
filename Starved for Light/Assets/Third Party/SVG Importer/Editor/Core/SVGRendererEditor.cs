@@ -72,11 +72,7 @@ namespace SVGImporter
                 SVGRenderer renderer = (SVGRenderer)target;
                 Renderer meshRenderer = renderer.GetComponent<Renderer>();
                 if (meshRenderer != null)
-                    //HACKHACK: Unity's deprecating naming schemes: 
-                    //Updated EditorUtility.SetSelectedWireframeHidden to SetSelectedRenderState
-                    //Needs testing.
                     UnityEditor.EditorUtility.SetSelectedWireframeHidden(meshRenderer, true);
-                    //EditorUtility.SetSelectedRenderState(meshRenderer, EditorSelectedRenderState.Highlight);
             } else
             {
                 UnityEngine.Object[] renderers = (UnityEngine.Object[])targets;
@@ -91,11 +87,7 @@ namespace SVGImporter
                         MeshRenderer meshRenderer = renderer.GetComponent<MeshRenderer>();
                         if (meshRenderer != null)
                         {
-                            //HACKHACK: Unity's deprecating naming schemes: 
-                            //Updated EditorUtility.SetSelectedWireframeHidden to SetSelectedRenderState
-                            //Needs testing.
                             EditorUtility.SetSelectedWireframeHidden(meshRenderer, true);
-                            //EditorUtility.SetSelectedRenderState(meshRenderer, EditorSelectedRenderState.Highlight);
                         }
                     }
                 }

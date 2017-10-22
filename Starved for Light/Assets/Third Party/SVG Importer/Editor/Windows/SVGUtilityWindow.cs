@@ -2,12 +2,6 @@
 // This code can only be used under the standard Unity Asset Store End User License Agreement
 // A Copy of the EULA APPENDIX 1 is available at http://unity3d.com/company/legal/as_terms
 
-// HACKHACK: Removing warning
-// Assets/Third Party/SVG Importer/Editor/Windows/SVGUtilityWindow.cs(52,18): 
-// warning CS0649: Field `SVGImporter.SVGUtilityWindow.m_TextureViewRect'
-// is never assigned to, and will always have its default value
-#pragma warning disable 649
-
 using System;
 using System.Reflection;
 
