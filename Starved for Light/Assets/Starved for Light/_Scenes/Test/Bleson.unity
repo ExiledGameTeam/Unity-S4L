@@ -205,7 +205,7 @@ MeshRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 461086062}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -246,7 +246,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 461086062}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 485ddf2c093d74abf922b2a83a6cd235, type: 3}
   m_Name: 
@@ -302,7 +302,7 @@ MeshRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 792070579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -343,7 +343,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 792070579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 485ddf2c093d74abf922b2a83a6cd235, type: 3}
   m_Name: 
@@ -842,9 +842,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -885,7 +883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _lastTimeModified: 636312457552144073
-  _vectorGraphics: {fileID: 11400000, guid: 4a6ec9182243057428f51079cd7a1667, type: 2}
+  _vectorGraphics: {fileID: 0}
   _color: {r: 0.05882353, g: 0.10980392, b: 0.21176471, a: 1}
   _opaqueMaterial: {fileID: 0}
   _transparentMaterial: {fileID: 0}
@@ -1110,8 +1108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99e5fd131620dac4da8a87e3a57b628b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useMovePosition: 0
-  maxWalkSpeed: 70
 --- !u!114 &1675504209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1124,4 +1120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raycastDistance: 5
-  rotationSpeed: 0
+  angleGoal: 0
+  angle: 0
+  goal: {x: 0, y: 0, z: 0, w: 0}
+  magic: 32
