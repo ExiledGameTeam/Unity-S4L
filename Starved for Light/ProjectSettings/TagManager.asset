@@ -8,7 +8,6 @@ TagManager:
   - gun
   - ghost
   - 2ddl
-  - New tag
   - onlyTrigger
   - Ground
   - Edge
@@ -25,7 +24,7 @@ TagManager:
   - "T\u0142o"
   - Light
   - Menu
-  - 
+  - Ground
   - 
   - LightSource
   - LightObstacle
