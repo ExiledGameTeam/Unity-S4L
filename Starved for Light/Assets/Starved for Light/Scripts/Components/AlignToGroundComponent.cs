@@ -5,26 +5,45 @@ using UnityEngine;
 namespace S4L {
     public class AlignToGroundComponent : MonoBehaviour {
 
-        private Transform t;
-        private float lastAngle;
+        private static bool debug = true;
+        private float rayAngle;
         private float normalAngle;
         public float raycastDistance = 2f;
 
+        //RECODE: These are used for coroutine, don't use these if you remove coroutine.
+        public float angleGoal;
+        public float angle;
+        public Quaternion goal;
+        //Some magic number from misiek's code
+        public float magic = 32;
+
         private void Awake() {
-            t = transform;
-            lastAngle = Vector2.Angle(Vector2.up, Physics2D.gravity.normalized);
+            rayAngle = Vector2.Angle(Vector2.up, Physics2D.gravity.normalized);
         }
 
-        private void Update() {
-            normalAngle = Vector2.SignedAngle(Vector2.down, GroundNormal(t.position, Vector2.down, raycastDistance));
-            AlignToNormal(t, lastAngle, normalAngle);
-            lastAngle = (lastAngle + normalAngle) / 2f;
-        }
+        public void Align(Transform t) {
+            Vector2 rayStartPosition = (Vector2)t.position + new Vector2(0f, 1f);
+            //normalAngle = Vector2.SignedAngle(Vector2.down, GroundNormal(rayStartPosition, Vector2.down, raycastDistance));
 
-        private void AlignToNormal(Transform target, float lastAngle, float normalAngle) {
-            float angle = (lastAngle + normalAngle) / 2f;
+            Vector2 groundNormal = GroundNormal(rayStartPosition, Vector2.down, raycastDistance);
+            groundNormal.y *= -1f;
+            float currentAngle = t.eulerAngles.z;
+            currentAngle -= currentAngle > 180 ? 360f : 0f;
+            float newAngle = 180f + (Mathf.Atan2(groundNormal.x, groundNormal.y) * Mathf.Rad2Deg);
 
-            target.rotation = Quaternion.Euler(0, 0, angle);
+            newAngle += newAngle < 0 ? 360f : 0f;
+            newAngle -= newAngle > 180f ? 360f : 0f;
+            
+            //t.rotation = Quaternion.Euler(new Vector3(0, 0, newAngle));
+
+            //REDCODE: Running a new coroutine each frame is very costy
+            StartCoroutine(ChangeSpeed(angle, newAngle, 2f));
+            goal = Quaternion.Euler(0, 0, angle);
+
+            t.rotation = Quaternion.Lerp(t.rotation, goal, magic * Time.deltaTime);
+            if (debug) {
+                //Debug.Log("Current Z: " + t.eulerAngles.z + " New Z: " + /*angleGoal + ", " + */newAngle);
+            }
         }
 
         public float GetCurrentAngle() {
@@ -44,22 +63,37 @@ namespace S4L {
                 );
 
             //Return first ground object
-            foreach (var hit in hits) {
-                Debug.DrawLine(startPosition, hit.point, Color.yellow);
-                Debug.DrawLine(
-                    hit.point,
-                    hit.point + hit.normal,
-                    Color.green);
+            if (debug) {
+                foreach (var hit in hits) {
+                    Debug.DrawLine(startPosition, hit.point, Color.yellow);
+                    Debug.DrawLine(
+                        hit.point,
+                        hit.point + hit.normal,
+                        Color.green);
+                }
             }
+            
             if (hits.Length > 0) {
                 return hits[0].normal;
             }
 
-            Debug.DrawLine(startPosition, 
-                startPosition + raycastAngle * raycastDistance, 
+            if (debug) {
+                Debug.DrawLine(startPosition,
+                startPosition + raycastAngle * raycastDistance,
                 Color.red
                 );
-            return Physics2D.gravity.normalized;
+            }
+            return -Physics2D.gravity.normalized;
+        }
+
+        //RECODE: Use something else instead of triggering a coroutine each frame.
+        IEnumerator ChangeSpeed(float v_start, float v_end, float duration) {
+            float elapsed = 0.0f;
+            while (elapsed < duration) {
+                angle = Mathf.Lerp(v_start, v_end, elapsed / duration);
+                elapsed += magic * Time.deltaTime;
+                yield return null;
+            }
         }
     }
 }

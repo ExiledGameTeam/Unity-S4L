@@ -3,6 +3,17 @@ using UnityEngine;
 using System.Collections.Generic;
 using S4L.Enums;
 
+/*
+ * Greeting from Bleson:
+ * 
+ * In order to learn how to use events in Unity, check out
+ * EventExample in Test folder and check out how they are 
+ * used in Iris.
+ * 
+ * I have commented out an example how to add a new event below.
+*/
+
+
 namespace S4L {
     public static class EventManager {
 
@@ -10,7 +21,7 @@ namespace S4L {
         /// List of axis inputs, 
         /// List of active button inputs
         /// </summary>
-        public static Action<List<Tuple<PlayerAxisInput, float>>, 
+        public static Action<List<Tuple<PlayerAxisInput, float>>,
             List<Tuple<PlayerButtonInput, ButtonEvent>>> OnPlayerInput = null;
         /// <summary>
         /// When triggered, the camera will focus on inputted transform. 
@@ -18,6 +29,16 @@ namespace S4L {
         /// </summary>
         public static Action<Transform> OnCameraTargetChanged = null;
 
+        //New event examples:
+        //public static Action<TYPES_OF_PARAMETERS, THAT_LISTENING_FUNCTION_TAKES_IN> OnSomething = null;
+        //public static Action<float, float, float> OnHealthChanged = null;
+
+        #region Event triggers
+        /* 
+         * These triggering functions are just a failsafe measure 
+         * so you can't trigger the event when it is null 
+         * (otherwise errors or other problems)
+        */
         public static void Trigger(
             Action action
         ) {
@@ -58,5 +79,6 @@ namespace S4L {
                 action(par1, par2, par3, par4);
             }
         }
+        #endregion
     }
 }
