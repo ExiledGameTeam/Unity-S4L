@@ -24,6 +24,11 @@ namespace S4L.Test {
             List<Tuple<Enums.PlayerAxisInput, float>> par1,
             List<Tuple<Enums.PlayerButtonInput, Enums.ButtonEvent>> par2
         ) {
+
+            /* Tuples always use .value1 for the first value of the pair
+             * (in this case AxisInput)
+             * and .value2 for the second value (in this case float)
+            */
             print("OnPlayerInput was triggered. Horizontal axis value: " + 
                 par1[0].value2.ToString());
         }

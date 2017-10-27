@@ -1,5 +1,7 @@
 ﻿namespace S4L.Enums {
-    /*
+
+    /* Inputs summary:
+     * 
      * Float: movement axis
      * Hold : Gallop
      * Hold / tap: Jump
@@ -19,6 +21,9 @@
         //Gameplay
         Jump,
         Gallop,
+        //CrawlDodge,
+        //Sneak,
+        //Interact
     }
 
     public enum PlayerAxisInput {
