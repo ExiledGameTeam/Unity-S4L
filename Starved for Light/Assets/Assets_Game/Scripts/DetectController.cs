@@ -159,7 +159,7 @@ public class DetectController : MonoBehaviour {
             Input.GetAxis("Mouse X") >0
             )
         {
-            print("Currently used: Keyboard");
+            //print("Currently used: Keyboard");
             Controller = 0;
         }
         if (Input.GetKeyDown(KeyCode.Joystick1Button0) ||
@@ -198,7 +198,7 @@ public class DetectController : MonoBehaviour {
             Input.GetAxis("joy_1_axis_7") > 0.2
             )
         {
-            print("Currently used: Gamepad");
+            //print("Currently used: Gamepad");
             Controller = 1;
         }
 
