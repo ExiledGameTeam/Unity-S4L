@@ -5,33 +5,33 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Starved for Light/_Scenes/Core/MainMenu.unity
+  - enabled: 0
+    path: 
     guid: 3730bddc6642c914292bac190511006e
   - enabled: 0
-    path: Assets/Starved for Light/_Scenes/Core/LoadingScreen.unity
+    path: 
     guid: acf53505ca9df4144a9e378d11ccddc3
   - enabled: 0
-    path: Assets/Starved for Light/_Scenes/Gameplay/1.unity
+    path: 
     guid: 41d1a658b49ffd1449621ab839a5aee9
-  - enabled: 1
-    path: Assets/Starved for Light/_Scenes/Gameplay/2.unity
+  - enabled: 0
+    path: 
     guid: 193f0ea092d39824dbe525c5ef54efc7
-  - enabled: 1
-    path: Assets/Starved for Light/_Scenes/Test/Test Chamber.unity
+  - enabled: 0
+    path: 
     guid: c30971fe97fe7f24491fdd338676f558
   - enabled: 0
-    path: Assets/Starved for Light/_Scenes/Portfolio.unity
+    path: 
     guid: cfc7b7f8c1e18e145a28a45abcdb8654
   - enabled: 0
     path: 
     guid: c0a70415b4adecc4fb5c6e2dd7c163b4
   - enabled: 0
-    path: Assets/Starved for Light/_Scenes/Gameplay/DreamHub.unity
+    path: 
     guid: 5b1237a5e2dfcbf428abd12243a6ea47
   - enabled: 1
     path: Assets/Starved for Light/Misc/DEMO/DEMO.unity
     guid: 00c49335dd7a26a4bb503c14450a7012
-  - enabled: 1
-    path: Assets/Starved for Light/_Scenes/Core/CoreAssets.unity
+  - enabled: 0
+    path: 
     guid: 0b471a47cfc1bdf43914dd95434a1691
