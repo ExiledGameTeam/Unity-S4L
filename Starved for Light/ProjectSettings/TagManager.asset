@@ -53,7 +53,7 @@ TagManager:
     locked: 0
   - name: Pierwszy plan
     uniqueID: 2494914075
-    locked: 1
+    locked: 0
   - name: Decorations
     uniqueID: 4063545461
     locked: 0
