@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 9
+  controlID: 30
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 10
+  controlID: 31
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 11
+  controlID: 32
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -325,18 +325,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Starved for Light/Misc/DEMO
+    - Assets/Starved for Light/Misc/DEMO/Assets/Foliage/Grass
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Starved for Light/Misc/DEMO
+  - Assets/Starved for Light/Misc/DEMO/Assets/Foliage/Grass
   m_LastFoldersGridSize: -1
   m_LastProjectPath: Y:\Unity-S4L\Starved for Light
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: 3e2e0000
-    m_LastClickedID: 11838
+    scrollPos: {x: 0, y: 255}
+    m_SelectedIDs: 78380000
+    m_LastClickedID: 14456
     m_ExpandedIDs: 000000008a2c0000062d00003e2e0000e03100008a320000fc3200001e380000da380000383d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -480,24 +480,24 @@ MonoBehaviour:
     width: 202
     height: 665
   m_TreeViewState:
-    scrollPos: {x: 0, y: 1768}
-    m_SelectedIDs: fa480000
-    m_LastClickedID: 18682
-    m_ExpandedIDs: 1afcffff00000000f44600003c500000
+    scrollPos: {x: 0, y: 144}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 1afcffff000000002c3f0000e6460000f4460000c0510000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: camp4
+      m_OriginalName: camp4
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -639918
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -533,14 +533,14 @@ MonoBehaviour:
     width: 1433
     height: 665
   m_SceneLighting: 1
-  lastFramingTime: 301.1361372534444
+  lastFramingTime: 17589.247275809208
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 306.55527, y: -4.944698, z: 0.4241383}
+    m_Target: {x: 51.580578, y: -16.491064, z: 0}
     speed: 2
-    m_Value: {x: 306.55527, y: -4.944698, z: 0.4241383}
+    m_Value: {x: 51.580578, y: -16.491064, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -567,9 +567,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 45.647648
+    m_Target: 48.949875
     speed: 2
-    m_Value: 45.647648
+    m_Value: 48.949875
   m_Ortho:
     m_Target: 1
     speed: 2
